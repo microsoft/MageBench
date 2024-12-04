@@ -22,8 +22,8 @@ PORT="9000"
 
 
 
-python main.py --API-type HuggingFace --flow-type Global --env Sokoban \
-        --output-dir ./output/Sokoban_${SUBSET}/${OUT} \
-        --task-path resources/Sokoban_${SUBSET}.json \
-        --resolution 640 --temperature 0.1 --n_workers 4 --max_image 1 --repeat 3 --max_tokens 1000 \
+python main.py --API-type HuggingFace --flow-type Global --env WebUI \
+        --output-dir ./output/WebUI_${SUBSET}/${OUT} \
+        --task-path resources/WebUI_${SUBSET}.json \
+        --resolution 1920 --temperature 0.1 --n_workers 4 --max_image 1 --repeat 3 --max_tokens 4000 \
         --port ${PORT}

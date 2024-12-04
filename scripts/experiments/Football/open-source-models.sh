@@ -6,7 +6,7 @@ SUBSET="mini"
 
 
 #====write a output dir====
-OUT="Phi-3-V-Global"
+OUT="Phi-3-V-Online"
 # OUT=""
 
 
@@ -22,8 +22,8 @@ PORT="9000"
 
 
 
-python main.py --API-type HuggingFace --flow-type Global --env Sokoban \
-        --output-dir ./output/Sokoban_${SUBSET}/${OUT} \
-        --task-path resources/Sokoban_${SUBSET}.json \
-        --resolution 640 --temperature 0.1 --n_workers 4 --max_image 1 --repeat 3 --max_tokens 1000 \
+python main.py --API-type HuggingFace --flow-type Online --env Football \
+        --output-dir ./output/Football_${SUBSET}/${OUT} \
+        --task-path resources/Football_${SUBSET}.json \
+        --resolution 1280 --temperature 0.1 --n_workers 4 --max_image 1 --repeat 10 --max_tokens 1000 --max_memory 5 --max_loop 400 \
         --port ${PORT}

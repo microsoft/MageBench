@@ -6,7 +6,7 @@ SUBSET="mini"
 
 
 #====write a output dir====
-OUT="Phi-3-V-Global"
+OUT="Phi-3-V-Online-Natural"
 # OUT=""
 
 
@@ -21,9 +21,18 @@ PORT="9000"
 # [meta-llama/Llama-3.2-90B-Vision-Instruct, Claude, Gemini], add --model_no_system
 
 
+#====output dir for global setting====
+INIT_OUT="Phi-3-V-Global"
 
-python main.py --API-type HuggingFace --flow-type Global --env Sokoban \
+
+#====WebUI online method prompt type
+ONLINE_PROMPT="Natural"
+
+
+
+python main_WebUI_online.py --API-type HuggingFace --webui_online_type ${ONLINE_PROMPT} \
         --output-dir ./output/Sokoban_${SUBSET}/${OUT} \
+        --init-dir ./output/WebUI_${SUBSET}/${INIT_OUT} \
         --task-path resources/Sokoban_${SUBSET}.json \
-        --resolution 640 --temperature 0.1 --n_workers 4 --max_image 1 --repeat 3 --max_tokens 1000 \
+        --resolution 1920 --temperature 0.1 --n_workers 4 --max_image 10 --repeat 3 --max_tokens 4000 \
         --port ${PORT}

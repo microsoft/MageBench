@@ -16,7 +16,6 @@ tasks: Dict[str, str] = {}
 # -----------------------------------------------------------------------------------
 
 
-# 加载GPT模型 meta-llama/Llama-3.2-11B-Vision-Instruct  
 model_id = "meta-llama/Llama-3.2-90B-Vision-Instruct"
 
 model = MllamaForConditionalGeneration.from_pretrained(

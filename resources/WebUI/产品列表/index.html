@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网易产品 列表版</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .wrap{
+      width: 400px;
+      border: 1px solid rgb(205, 204, 204);
+    }
+    h4{
+      background-color: rgb(240, 240, 240);
+      box-shadow: 1px 1px 1px rgb(180, 180, 180);
+      margin: 0;
+      padding: 3px 0 3px 5px;
+    }
+    ul{
+      list-style: none;
+    }
+    ul li{
+      padding: 20px 18px;
+    }
+    .title{
+      width: 30px;
+      padding-right: 15px;
+      float: left;
+    }
+    .bgc{
+      background-color: rgb(248, 248, 248);;
+    }
+    .bgc .title
+    {
+      height: 80px;
+      line-height: 80px;
+    }
+    .bo .title{
+      height: 42px;
+      line-height: 42px;
+    }
+    img{
+      text-align: center;
+      vertical-align: middle;
+    }
+    dt{
+      padding: 0px 18px;
+    }
+    a{
+      margin-right: 8px;
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h4 data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|box-shadow|padding">网易产品</h4>
+    <ul>
+      <li>
+        <div class="title">
+        <img src="./imgs/i6.jpg" alt="" data-filter-by="src" data-evalby="width|height|src">
+        </div>
+        <div class="content">
+          <a href="" data-filter-by="text" data-evalby="font-size|font-weight|color|margin-right|text-decoration">免费邮</a>
+          <a href="" data-filter-by="text" data-evalby="font-size|font-weight|color|margin-right|text-decoration">VIP邮箱</a>
+          <a href="" data-filter-by="text" data-evalby="font-size|font-weight|color|margin-right|text-decoration">企业邮箱</a>
+          <a href="" data-filter-by="text" data-evalby="font-size|font-weight|color|margin-right|text-decoration">闪电邮</a>
+          <a href="" data-filter-by="text" data-evalby="font-size|font-weight|color|margin-right|text-decoration">易信</a>
+        </div>
+      </li>
+      <li class="games bgc">
+        <div class="title">
+          <img src="./imgs/i7.jpg" alt="" data-filter-by="src" data-evalby="width|height|src">
+        </div>
+      </li>
+      <li class="bo">
+        <div class="title">
+          <img src="./imgs/i8.jpg" alt="" data-filter-by="src" data-evalby="width|height|src">
+        </div>
+      </li>
+      <li class="cai bgc">
+        <div class="title">
+          <img src="./imgs/i9.jpg" alt="" data-filter-by="src" data-evalby="width|height|src">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    const datagames = ['梦幻西游2', '新大话西游2', '新大话西游3', '魔兽世界', '星际争霸Ⅱ', '倩女幽魂2', '武魂', '天下3', '新大外', '新飞飞', '大唐无双2', '天谕', '英雄三国', '龙剑', '迷你西游', '炉石传说']
+    array = ['企业邮箱', '闪电邮', '易信免贵邮VIP邮箱',  ]
+    const databo = ['博客', '微博', '相册FTER', '速器', '花田', '同城约会', '跟贴', 'iStyle', 'Cc语音']
+    const datacai = ['彩票', '理财', '商城', '世界杯', '电影票', '车险', '有道词典', '翻译', '云笔记', '印像派', '公开课', '云课堂', '云阅读', '云音乐', '火车票', '游戏助手', '电子传真', '应用盒子', '新闻客户端', '网号', '识字']
+    const games = document.querySelector('.games')
+    const bo = document.querySelector('.bo')
+    const cai = document.querySelector('.cai')
+    for(let i =0;i<datagames.length;i++){
+      const a =document.createElement('a')
+      a.href = datagames[i]
+      a.textContent = datagames[i]
+      a.setAttribute('data-filter-by', 'text')
+      a.setAttribute('data-evalby', 'font-size|font-weight|color|margin-right|text-decoration')
+      games.appendChild(a)
+    }
+    for(let i =0;i<databo.length;i++){
+      const a =document.createElement('a')
+      a.href = databo[i]
+      a.textContent = databo[i]
+      a.setAttribute('data-filter-by', 'text')
+      a.setAttribute('data-evalby', 'font-size|font-weight|color|margin-right|text-decoration')
+      bo.appendChild(a)
+    }
+    for(let i =0;i<datacai.length;i++){
+      const a =document.createElement('a')
+      a.href = datacai[i]
+      a.textContent = datacai[i]
+      a.setAttribute('data-filter-by', 'text')
+      a.setAttribute('data-evalby', 'font-size|font-weight|color|margin-right|text-decoration')
+      cai.appendChild(a)
+    }
+  </script>
+</body>
+</html>

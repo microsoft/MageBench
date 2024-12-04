@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+/* 导航栏 */
+.pdd-head-wapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 107px;
+  border-bottom: 4px solid #ed435b;
+}
+.pdd-head-wapper .pdd-head {
+  position: relative;
+  width: 1200px;
+  height: 105px;
+  margin: 0 auto;
+}
+.pdd-head-wapper .pdd-head .logo img {
+  width: 15%;
+  float: left;
+  margin: 21px 0;
+}
+.pdd-head-wapper .pdd-head .menu {
+  position: absolute;
+  color: #6c6c6c;
+  font-size: 16px;
+  left: 230px;
+  top: 40%;
+  height: 30px;
+  list-style: none;
+  line-height: 30px;
+}
+.pdd-head-wapper .pdd-head .menu li {
+  height: 20px;
+  float: left;
+  line-height: 20px;
+  border-right: 1px solid #6c6c6c;
+  cursor: pointer;
+}
+.pdd-head-wapper .pdd-head .menu li:first-child span {
+  margin-left: 0;
+  font-weight: bold;
+  color: #fc475d;
+}
+.pdd-head-wapper .pdd-head .menu li:last-child {
+  border: 0;
+}
+.pdd-head-wapper .pdd-head .menu li:last-child span {
+  margin-right: 0;
+}
+.pdd-head-wapper .pdd-head .menu li span {
+  margin: 0 10px;
+}
+#index {
+  height: 641px;
+  margin-top: 107px;
+  /* 左侧二维码 */
+}
+#index img {
+  width: 100%;
+}
+#index .body {
+  width: 1200px;
+  margin: 77px auto 30px auto;
+}
+#index .body .title-group {
+  height: 26px;
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 17px;
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+#index .body .title-group .title {
+  float: left;
+  font-size: 20px;
+  color: #363636;
+}
+#index .body .title-group .more {
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+  color: #868686;
+}
+#index .body .content-group {
+  margin: 0 auto;
+}
+#index .body .content-group a {
+  background-color: #fff;
+  padding: 14px;
+  margin-right: 17px;
+  margin-bottom: 17px;
+  display: block;
+  z-index: 100;
+}
+#index .body .content-group a img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+#index .pdd-left-code {
+  width: 162px;
+  height: 210px;
+  position: fixed;
+  bottom: 150px;
+  left: -8px;
+}
+#index .pdd-left-code:hover {
+  left: 0%;
+}
+#index .pdd-left-code .pdd-left-code-container {
+  margin: 8px;
+  padding: 20px 15px 8px;
+  border: 2px solid #ffedf1;
+}
+#index .pdd-left-code .pdd-left-code-container img {
+  width: 100%;
+  display: block;
+}
+#index .pdd-left-code .pdd-left-code-container .pdd-left-code-container-desc {
+  margin-top: 10px;
+}
+#index .pdd-left-code .pdd-left-code-container .pdd-left-code-container-desc div {
+  color: #666;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}

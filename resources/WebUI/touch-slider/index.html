@@ -1,0 +1,36 @@
+<!-- Based on Build a Touch Slider with HTML, CSS & JavaScript by Brad Traversy (2021)
+see: https://www.youtube.com/watch?v=5bxFSOA5JYo 
+original idea by Will Adams: https://github.com/bushblade/Full-Screen-Touch-Slider -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Touch Slider</title>
+</head>
+<body>
+<div class="slider-container">
+<div class="slide">
+<h2 data-filter-by="text" data-evalby="font-size|font-weight|color">AirPods</h2>
+<h4 data-filter-by="text" data-evalby="font-size|font-weight|color">$199</h4>
+<img alt="" src="resource1.png" data-filter-by="src" data-evalby="max-width|max-height|transition"/>
+<a class="btn" href="#" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|border-radius">Buy Now</a>
+</div>
+<div class="slide">
+<h2 data-filter-by="text" data-evalby="font-size|font-weight|color">iPhone 12</h2>
+<h4 data-filter-by="text" data-evalby="font-size|font-weight|color">$799</h4>
+<img alt="" src="resource2.png" data-filter-by="src" data-evalby="max-width|max-height|transition"/>
+<a class="btn" href="#" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|border-radius">Buy Now</a>
+</div>
+<div class="slide">
+<h2 data-filter-by="text" data-evalby="font-size|font-weight|color">iPad</h2>
+<h4 data-filter-by="text" data-evalby="font-size|font-weight|color">$599</h4>
+<img alt="" src="resource3.png" data-filter-by="src" data-evalby="max-width|max-height|transition"/>
+<a class="btn" href="#" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|border-radius">Buy Now</a>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

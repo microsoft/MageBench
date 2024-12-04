@@ -1,0 +1,188 @@
+/* 默认样式设置 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	background-color: #fbe3df;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+li {
+	list-style: none;
+}
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* 控制外围宽度 */
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+/* 栏目标题 */
+.column-title {
+	color: #707070;
+	font-weight: 500;
+	margin: 20px 0;
+}
+/* 宫格布局 */
+.grid {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/* 头部样式 */
+.header {
+	width: 100%;
+}
+.header > .header-img {
+	height: 45px;
+	background: url("./images/header.png");
+}
+.header > .header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 45px;
+	background-color: #febdcf;
+}
+.header > .header-nav > li {
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 20px;
+	text-align: center;
+}
+.header > .header-nav > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #80364d;
+}
+/* 经过导航样式 */
+.header > .header-nav > li:hover a,
+/* 当前导航样式 */
+.header > .header-nav > .nav-active a {
+	font-weight: 700;
+	color: #fff;
+	background-color: #f088a7;
+}
+.header > .header-welcome {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	color: #707070;
+	background-color: #fff;
+}
+.header > .header-welcome p {
+	margin: 0 20px;
+}
+/* 底栏样式 */
+.footer {
+	width: 100%;
+	background-color: #fff;
+}
+.footer .footer-logo {
+	width: 120px;
+	height: 60px;
+	margin: 0 auto;
+}
+.footer .footer-list {
+	display: flex;
+	margin: 20px 0;
+	justify-content: center;
+}
+.footer .footer-list li {
+	list-style: disc;
+	margin: 0 20px;
+}
+.footer .footer-list a:hover {
+	color: #f088a7;
+}
+.footer .footer-phone {
+	text-align: center;
+	color: #707070;
+	padding-bottom: 20px;
+}
+
+
+.content {
+	background: url("./images/bgc.jpg");
+}
+.top-title {
+	display: flex;
+}
+.top-title .left,
+.top-title .right {
+	width: 66%;
+	height: 70px;
+	background: url("./images/index/Decorate/flower.png");
+	background-size: 70px;
+}
+.top-title .center {
+	margin: 0 auto;
+	width: 28%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 26px;
+	background: url("./images/index/Decorate/cloud.png") no-repeat;
+	background-size: 120px;
+	background-position: center center;
+}
+.top-title span {
+	z-index: 1;
+	display: block;
+	width: 120px;
+	height: 50px;
+	margin: auto;
+	background: url("./images/index/Decorate/cloud.png");
+	background-size: 120px;
+	background-color: #fbe3df;
+	padding: 20px;
+}
+.col {
+	display: flex;
+	justify-content: space-between;
+	height: 800px;
+	margin: 60px 0;
+}
+.content-row {
+	width: 200px;
+	height: 300px;
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+.content-row:hover {
+	height: 800px;
+}
+.content-row .row-img {
+	width: 100%;
+	height: 300px;
+}
+.content-row .row-title {
+	width: 100%;
+	padding: 20px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+/* 烟花 */
+.fireworks-list {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.fireworks-list li {
+	height: 260px;
+}
+.fireworks-list li:nth-child(odd) {
+	height: 300px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Form Validator</title>
+</head>
+<body>
+<!-- Form -->
+<section class="container">
+<form>
+<div class="input-container">
+<input class="username" id="username" placeholder="Name*" type="text" data-filter-by="placeholder" data-evalby="padding|width|outline"/>
+<p class="user-msg msg" data-filter-by="text" data-evalby="font-size|font-weight|color">error message</p>
+</div>
+<div class="input-container">
+<input class="email" id="email" placeholder="Email Address*" type="email" data-filter-by="placeholder" data-evalby="padding|width|outline"/>
+<p class="email-msg msg" data-filter-by="text" data-evalby="font-size|font-weight|color">error message</p>
+</div>
+<div class="input-container">
+<input class="password1" id="password1" placeholder="Password*" type="password" data-filter-by="placeholder" data-evalby="padding|width|outline"/>
+<p class="password1-msg msg" data-filter-by="text" data-evalby="font-size|font-weight|color">error message</p>
+</div>
+<div class="input-container">
+<input class="password2" id="password2" placeholder="Confirm Password*" type="password" data-filter-by="placeholder" data-evalby="padding|width|outline"/>
+<p class="password2-msg msg" data-filter-by="text" data-evalby="font-size|font-weight|color">error message</p>
+</div>
+<input class="submit" type="submit" value="Submit" data-filter-by="value" data-evalby="background|border|padding|cursor"/>
+<p class="already" data-filter-by="text" data-evalby="font-size|font-weight|color">Already have an account? <a href="#">Login</a></p>
+</form>
+<!-- Image / Content -->
+<div class="content">
+<img src="resource1.jpg" data-filter-by="src" data-evalby="width|position|top|right"/>
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">
+          Shoe <br/>
+          Palace
+        </h1>
+</div>
+</section>
+<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
+</body>
+</html>

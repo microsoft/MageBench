@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="image-container" id="imgs">
+        <img src="resource1.png" alt="first-image" data-filter-by="src" data-evalby="width|height|object-fit" />
+        <img src="resource2.png" alt="second-image" data-filter-by="src" data-evalby="width|height|object-fit" />
+        <img src="resource3.png" alt="third-image" data-filter-by="src" data-evalby="width|height|object-fit" />
+        <img src="resource4.png" alt="fourth-image" data-filter-by="src" data-evalby="width|height|object-fit" />
+      </div>
+
+      <div class="buttons-container">
+        <button id="left" class="btn" data-filter-by="text" data-evalby="background-color|color|border|padding|cursor|width">Prev</button>
+        <button id="right" class="btn" data-filter-by="text" data-evalby="background-color|color|border|padding|cursor|width">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

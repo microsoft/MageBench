@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="content-container">
+        <h1 data-filter-by="text" data-evalby="font-size|color">Welcome To The Real World</h1>
+        <p data-filter-by="text" data-evalby="width|text-align|margin-bottom|color|line-height">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          architecto minima unde minus laborum expedita eum inventore pariatur
+          ab iste, hic voluptates enim odit reprehenderit aliquid est aut!
+          Inventore, quaerat?
+        </p>
+        <button class="cta-btn" id="open" data-filter-by="text" data-evalby="padding|font-size|background-color|color">Sign Up</button>
+      </div>
+    </header>
+
+    <section class="modal-container" id="modal">
+      <section class="modal">
+        <button class="close-btn" id="close" data-filter-by="text" data-evalby="font-size|top|right">x</button>
+        <div class="modal-content">
+          <h1 data-filter-by="text" data-evalby="font-size|color">Sign Up</h1>
+          <form class="modal-form">
+            <div>
+              <label for="name" data-filter-by="text" data-evalby="margin-bottom">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="form-input"
+                data-filter-by="placeholder"
+                data-evalby="padding|width"
+              />
+            </div>
+            <div>
+              <label for="email" data-filter-by="text" data-evalby="margin-bottom">Email</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+                data-filter-by="placeholder"
+                data-evalby="padding|width"
+              />
+            </div>
+            <div>
+              <label for="password" data-filter-by="text" data-evalby="margin-bottom">Password</label>
+              <input
+                type="text"
+                id="password"
+                placeholder="Enter Password"
+                class="form-input"
+                data-filter-by="placeholder"
+                data-evalby="padding|width"
+              />
+            </div>
+            <div>
+              <label for="password2" data-filter-by="text" data-evalby="margin-bottom">Confirm Password</label>
+              <input
+                type="text"
+                id="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+                data-filter-by="placeholder"
+                data-evalby="padding|width"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" data-filter-by="value" data-evalby="padding|font-weight|background-color|color" />
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

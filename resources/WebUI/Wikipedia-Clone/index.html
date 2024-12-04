@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Search Wikipedia</h1>
+        <span id="theme-toggler" data-filter-by="text" data-evalby="font-size|font-weight|color|background|padding|border-radius">Light</span>
+      </div>
+
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter search term" data-filter-by="placeholder" data-evalby="font-size|padding|border|border-radius" />
+        <button type="submit" data-filter-by="text" data-evalby="font-size|padding|background-color|color|border|border-radius">Search</button>
+      </form>
+
+      <div id="search-results" data-filter-by="has_text" data-evalby="margin-bottom"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

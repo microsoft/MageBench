@@ -1,0 +1,55 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  color: #fff;
+}
+.container{
+  padding: 30px 0px 30px 20px;
+  display: flex;
+  position: relative;
+}
+
+.container .card {
+  width: 120px;
+  height: 120px;
+  box-shadow: -20px 0px 30px #000;
+  border-radius:16px;
+  overflow: hidden;
+  background: linear-gradient(85deg, #434343, #252525);
+  transform: all .3s ease-in-out;
+}
+
+.container .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 除了第一张，其他图片向左移动30px,呈现一个折叠效果 */
+.container .card:not(:first-child){
+  margin-left: -40px;
+}
+
+.container .card:hover{
+  transform: translateY(-1rem) rotate(3deg);
+}
+
+.container .card:first-child:hover {
+  transform: translate(-0.5rem, -1rem) rotate(3deg);
+}
+/* ~ ：同级向下查找，即当前。card的兄弟card */
+.container .card:hover~.card {
+  transform: translateX(50px);
+}

@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #F7F7F7;
+}
+header{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.border-radius{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #AAE6DA ;
+	font-size: 25px;
+	font-family: "microsoft yahei";
+	border-radius: 50px;
+	text-align: center;
+	margin: 35px auto;
+	border: #ffffff 5px solid;
+	color: #F7F7F7;
+}
+.border-radius:hover{
+	box-shadow: 0 0 15px #AAAAAA;
+}
+.main{
+	width: 880px;
+	height: 440px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.view{
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.hover{
+	width: 200px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top:40px;
+	left: 0;
+	height: 0;
+	z-index: 4000;
+	text-align: center;
+	color: #FFFFFF;
+	overflow: hidden;
+	transform: rotate(55deg);
+	-webkit-transform: rotate(55deg);
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.hover h3{
+	color: #FFFFFF;
+	border-bottom: 2px solid #B88608;
+	padding-bottom: 10px;
+}
+.view:hover .hover{
+	height: 120px;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+.view:before{
+	content: '';
+	position: absolute;
+	top: -240px;
+	right: 0;
+	width: 360px;
+	height: 360px;
+	background: rgba(133,203,190,0.5);
+	transform: rotate(55deg) translate(60px);
+	transform-origin: 100% 0%;
+	transition: all 0.5s ease 0.3s;
+	-webkit-transform: rotate(55deg) translate(60px);
+	-webkit-transform-origin:100% 0%;
+	-webkit-transition: all 0.5s ease 0.3s;
+}
+.view:hover:before{
+	top: 0;
+}
+.view:after{
+	content: '';
+	position: absolute;
+	bottom: -240px;
+	left: 0;
+	width: 360px;
+	height: 360px;
+	background: rgba(133,203,190,0.5);
+	transform: rotate(55deg) translate(60px);
+	transform-origin: 0% 100%;
+	transition: all 0.5s ease 0.3s;
+	-webkit-transform: rotate(55deg) translate(-60px);
+	-webkit-transform-origin: 0% 100%;
+	-webkit-transition: all 0.5s ease 0.3s;
+}
+.view:hover:after{
+	bottom: 0;
+}
+section{
+	width: 55rem;
+	margin: 0 auto;
+	background-color: #AAE6DA;
+}
+section>p{
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	color: #FAFAFA;
+	padding: 20px;
+	text-align: 2em;
+	line-height: 30px;
+	
+}
+footer{
+	font-family: "microsoft yahei";
+	text-align: center;
+	font-size: 35px;
+	color: #AAE6DA;
+	padding: 20px;
+	line-height: 30px;
+}
+.services{
+	font-family: "microsoft yahei";
+	text-align: center;
+	padding-bottom: 50px;
+}
+.services a{
+	color: #AAAAAA;
+}
+.services a:link{
+	text-decoration: none;
+}
+.services a:hover{
+	color: purple;
+}

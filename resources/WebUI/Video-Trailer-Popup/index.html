@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Trailer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="play.png" class="btn" data-filter-by="src" data-evalby="position|bottom|right|width|cursor|animation-name|animation-duration|animation-timing-function|animation-iteration-count" />
+    </div>
+
+    <div class="trailer-container active">
+      <video src="trailer.mp4" controls data-filter-by="src" data-evalby="position|max-width|outline"></video>
+      <p class="close-icon" data-filter-by="text" data-evalby="position|top|right|color|font-size|cursor|font-family|padding|border-radius">X</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

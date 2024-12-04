@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<title>3D Product Card</title>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<div class="sneaker">
+<div class="circle" data-filter-by="class" data-evalby="width|height|background|border-radius"></div>
+<img alt="adidas" src="images/adidas.png" data-filter-by="src" data-evalby="width|transition"/>
+</div>
+<div class="info">
+<h1 class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">Adidas ZX</h1>
+<h3 data-filter-by="text" data-evalby="font-size|font-weight|color">
+            FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.
+          </h3>
+<div class="sizes">
+<button data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">39</button>
+<button data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">40</button>
+<button class="active" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">42</button>
+<button data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">44</button>
+</div>
+<div class="purchase">
+<button data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">Purchase</button>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

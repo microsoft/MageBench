@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn & SignUp Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">
+        <span class="heading-span-1" data-filter-by="text" data-evalby="font-size|font-weight|color|letter-spacing|text-shadow">Sign</span>
+        <span class="heading-span-2" data-filter-by="text" data-evalby="font-size|font-weight|color|letter-spacing|text-shadow">In</span>
+      </h1>
+      <div class="buttons">
+        <button class="signin-btn" data-filter-by="text" data-evalby="font-size|color|background-color|border-radius|box-shadow|margin|cursor|transition">SignIn</button>
+        <button class="signup-btn" data-filter-by="text" data-evalby="font-size|color|background-color|border-radius|box-shadow|margin|cursor|transition">SignUp</button>
+      </div>
+      <div class="form-bg"></div>
+      <form class="form sign-in">
+        <div class="form-input-wrapper">
+          <input
+            autocomplete="off"
+            type="text"
+            class="form-input"
+            id="username"
+            placeholder="Your Name"
+            data-filter-by="placeholder"
+            data-evalby="width|height|background-color|font-size|padding|letter-spacing|border-radius|box-shadow|color"
+          />
+          <p class="message" data-filter-by="text" data-evalby="font-size|font-weight|letter-spacing|text-transform|margin-top|color|visibility|opacity|transition">Error Message</p>
+        </div>
+        <div class="form-input-wrapper">
+          <input
+            autocomplete="off"
+            type="text"
+            class="form-input"
+            id="email"
+            placeholder="Email Address"
+            data-filter-by="placeholder"
+            data-evalby="width|height|background-color|font-size|padding|letter-spacing|border-radius|box-shadow|color"
+          />
+          <p class="message" data-filter-by="text" data-evalby="font-size|font-weight|letter-spacing|text-transform|margin-top|color|visibility|opacity|transition">Error Message</p>
+        </div>
+        <div class="form-input-wrapper">
+          <input
+            autocomplete="off"
+            type="password"
+            class="form-input"
+            id="password"
+            placeholder="Password"
+            data-filter-by="placeholder"
+            data-evalby="width|height|background-color|font-size|padding|letter-spacing|border-radius|box-shadow|color"
+          />
+          <p class="message" data-filter-by="text" data-evalby="font-size|font-weight|letter-spacing|text-transform|margin-top|color|visibility|opacity|transition">Error Message</p>
+        </div>
+        <div class="form-input-wrapper">
+          <input
+            autocomplete="off"
+            type="password"
+            class="form-input"
+            id="password2"
+            placeholder="Confirm Password"
+            data-filter-by="placeholder"
+            data-evalby="width|height|background-color|font-size|padding|letter-spacing|border-radius|box-shadow|color"
+          />
+          <p class="message" data-filter-by="text" data-evalby="font-size|font-weight|letter-spacing|text-transform|margin-top|color|visibility|opacity|transition">Error Message</p>
+        </div>
+        <input type="submit" value="Submit" class="form-btn" data-filter-by="value" data-evalby="box-shadow|color|margin|letter-spacing|font-weight|cursor|position|top|transition" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BMI Calculator</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<h1 class="heading" data-filter-by="text" data-evalby="font-size|font-weight|color">Body Mass Index (BMI) Calculator</h1>
+        <span data-filter-by="text" data-evalby="font-size|font-weight|color">Your Height (cm):</span>
+        <input class="input" id="height" placeholder="Enter your height in cm" type="number" value="180" data-filter-by="id" data-evalby="padding|font-size|background|border-color|margin"/>
+        <span data-filter-by="text" data-evalby="font-size|font-weight|color">Your Weight (kg):</span>
+        <input class="input" id="weight" placeholder="Enter your weight in kg" type="number" value="80" data-filter-by="id" data-evalby="padding|font-size|background|border-color|margin"/>
+<button class="btn" id="btn" data-filter-by="id" data-evalby="background-color|border|padding|border-radius|margin|font-size|box-shadow|cursor">Compute BMI</button>
+<input class="input" disabled="" id="bmi-result" type="text" data-filter-by="id" data-evalby="padding|font-size|background|border-color|margin"/>
+<h4 class="info-text" data-filter-by="text" data-evalby="font-size|font-weight|color">Weight Condition: <span id="weight-condition" data-filter-by="id" data-evalby="font-size|font-weight|color|text"></span></h4>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

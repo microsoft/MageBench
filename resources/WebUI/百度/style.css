@@ -1,0 +1,77 @@
+header{
+	height: 50px;
+	font-weight: bold;
+}
+header div{
+	float: right;
+	color:black;
+}
+div a{
+	text-align: right;
+	color:black;
+	padding: 5px 5px;
+	font-size: 14px;
+}
+div :nth-child(7),:nth-child(8){
+	font-weight: normal;
+}
+div :nth-child(9){
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+
+.logo{
+	text-align: center;
+}
+
+
+.search{
+	text-align: center;
+}
+.search input{
+	height: 35px;
+	width: 450px;
+}
+.search button{
+	height: 35px;
+	width: 100px;
+	background-color:blue;
+	color: white;
+}
+
+
+.code{
+	/* height: 250px;
+	line-height: 480px; */
+	margin-top: 25%;
+	text-align: center;
+}
+.sjbd{
+	display: block;
+	text-align: center;
+	font-size: 13px;
+}
+
+
+.ft{
+	font-size: 12px;
+	margin-top:50px;
+	text-align: center;
+	/* height: 50px;
+	line-height: 100px; */
+}
+
+
+.z{
+	color: darkgray;
+	font-size: 12px;
+	font-weight:inherit;
+	text-align: center;
+}
+footer a{
+	color: darkgray;
+	font-size: 12px;
+}

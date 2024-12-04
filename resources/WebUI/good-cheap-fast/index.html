@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Good, Cheap, Fast</title>
+  </head>
+  <body>
+    <h2 data-filter-by="text" data-evalby="font-size|font-weight|color">How do you want your project to be?</h2>
+    <div class="toggle-container">
+      <input type="checkbox" id="good" class="toggle" data-filter-by="type" data-evalby="visibility">
+      <label for="good" class="label" data-filter-by="for" data-evalby="background-color|border-radius|cursor|width|height">
+        <div class="ball" data-filter-by="background" data-evalby="background|height|width|border-radius|position|top|left|animation"></div>
+      </label>
+      <span data-filter-by="text" data-evalby="font-size|font-weight|color">Good</span>
+    </div>
+
+    <div class="toggle-container">
+      <input type="checkbox" id="cheap" class="toggle" data-filter-by="type" data-evalby="visibility">
+      <label for="cheap" class="label" data-filter-by="for" data-evalby="background-color|border-radius|cursor|width|height">
+        <div class="ball" data-filter-by="background" data-evalby="background|height|width|border-radius|position|top|left|animation"></div>
+      </label>
+      <span data-filter-by="text" data-evalby="font-size|font-weight|color">Cheap</span>
+    </div>
+
+    <div class="toggle-container">
+      <input type="checkbox" id="fast" class="toggle" data-filter-by="type" data-evalby="visibility">
+      <label for="fast" class="label" data-filter-by="for" data-evalby="background-color|border-radius|cursor|width|height">
+        <div class="ball" data-filter-by="background" data-evalby="background|height|width|border-radius|position|top|left|animation"></div>
+      </label>
+      <span data-filter-by="text" data-evalby="font-size|font-weight|color">Fast</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

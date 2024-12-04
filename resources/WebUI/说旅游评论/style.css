@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+#h1{
+	color:#C60;
+	text-align:center;
+	font-weight:bolder;
+}
+
+#first{
+	width:1038px;
+	height:52px;
+}
+#second{
+    width:1038px;
+    height:450px;
+}
+#maerdaifu{
+	width:1038px;
+    height:110px;
+}
+#xt{
+	font-style:italic;
+	text-align:left;
+	color:#666;
+}
+#three{
+	width:1038px;
+	height:545px;
+}
+#four{
+	width:1038px;
+	height:360px;
+}
+#five{
+	width:1038px;
+	height:170px;
+}
+#foot{
+	text-align:center;
+}
+#footcolor{
+	color:#06C;
+	text-align:center;
+}

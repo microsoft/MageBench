@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rotating Gallery</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="image-container">
+<span style="--i: 1">
+<img src="resource1.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 2">
+<img src="resource2.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 3">
+<img src="resource3.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 4">
+<img src="resource4.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 5">
+<img src="resource5.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 6">
+<img src="resource6.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 7">
+<img src="resource7.png" data-filter-by="src" data-evalby="width"/>
+</span>
+<span style="--i: 8">
+<img src="resource8.png" data-filter-by="src" data-evalby="width"/>
+</span>
+</div>
+<div class="btn-container">
+<button class="btn" id="prev" data-filter-by="text" data-evalby="background|color|border-radius|padding">Prev</button>
+<button class="btn" id="next" data-filter-by="text" data-evalby="background|color|border-radius|padding">Next</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

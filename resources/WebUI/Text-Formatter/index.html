@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <h2 data-filter-by="text" data-evalby="font-size|font-family|color|margin-bottom">Type In Your Words</h2>
+        <input type="text" id="input-field" placeholder="Type Your Text Here" data-filter-by="placeholder" data-evalby="width|padding|margin-bottom|outline" />
+      </div>
+
+      <div class="btns-container">
+        <button class="btn uppercase" data-filter-by="text" data-evalby="padding|font-weight|background-color|color|border|margin">ABC</button>
+        <button class="btn lowercase" data-filter-by="text" data-evalby="padding|font-weight|background-color|color|border|margin">abc</button>
+        <button class="btn capitalize" data-filter-by="text" data-evalby="padding|font-weight|background-color|color|border|margin">Abc</button>
+        <button class="btn bold" data-filter-by="text" data-evalby="padding|font-weight|background-color|color|border|margin">B</button>
+        <button class="btn italic" data-filter-by="text" data-evalby="padding|font-weight|background-color|color|border|margin">/</button>
+        <button class="btn underline" data-filter-by="text" data-evalby="padding|font-weight|background-color|color|border|margin">ABC</button>
+      </div>
+
+      <p id="output-field" data-filter-by="text" data-evalby="width|height|background|color|border|border-radius|display|justify-content|align-items|margin|font-family">Output</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

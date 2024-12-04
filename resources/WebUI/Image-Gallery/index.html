@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- code for JavaScript -->
+    <div class="imageWrapper" id="wrapper">
+      <img src="images/Img1.jpg" id="fullImg" data-filter-by="src" data-evalby="width|max-width" />
+      <span data-filter-by="text" data-evalby="font-size|font-family|color|cursor">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img src="images/Img1.jpg" data-filter-by="src" data-evalby="width|cursor|transition|box-shadow" />
+      <img src="images/Img2.jpg" data-filter-by="src" data-evalby="width|cursor|transition|box-shadow" />
+      <img src="images/Img3.jpg" data-filter-by="src" data-evalby="width|cursor|transition|box-shadow" />
+      <img src="images/Img4.jpg" data-filter-by="src" data-evalby="width|cursor|transition|box-shadow" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

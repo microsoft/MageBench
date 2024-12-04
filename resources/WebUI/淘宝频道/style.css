@@ -1,0 +1,111 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background:#f4f4f4;
+}
+.list{
+	width:1190px;
+	margin:0 auto;
+	background:white;
+	border:1px solid white;
+}
+.list h1{
+	font-size:20px;
+	color:#FF5500;
+	border-left:5px solid #FF5500;
+	padding-left:10px;
+	margin:17px 18px;
+	line-height:20px;
+	font-family:tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif
+}
+.ad{
+	margin:17px 18px;
+}
+.ad a{
+	color:#999;
+	font-size:12px;
+	margin-right:10px;
+}
+.ad span{
+	color:#999;
+	border:1px solid #999;
+	padding:1px 8px;
+	border-radius: 8px;
+	font-size:8px;
+}
+.list ul{
+	display: flex;
+}
+.list ul li{
+	width:197px;
+	padding:20px;
+	border: 1px solid #F4F4F4;
+	margin: 0px 0 0 -1px;
+}
+.list ul li:first-child{
+	border-left:1px solid #fff;
+}
+.list ul li:last-child{
+	border-right:1px solid #fff;
+}
+.list ul li:hover{
+	border-color:red;
+	position: relative;
+}
+.list ul li a{
+	display: block;
+	color:#666;
+}
+.list ul li img{
+	width:197px;
+	height: 197px;
+}
+.pname{
+	font-size:14px;
+	height: 40px;
+	margin:8px 0;
+}
+.love a{
+	display: inline !important;
+	color:#999;
+	font-size:12px;
+	margin-right:15px;
+}
+em{
+	font-style: normal;
+}
+.sale{
+	margin-top:17px;
+	height: 22px;
+	line-height: 22px;
+}
+.sale a{
+	font-size:12px;
+	color:#999;
+}
+.price em{
+	font-size:22px;
+	
+}
+.price{
+	float: left;
+
+}
+.sell{
+	float: right;
+	margin-top:2px;
+}
+ins{
+	text-decoration: none;
+	color:#ff5000;
+}
+

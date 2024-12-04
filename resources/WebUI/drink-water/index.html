@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drink Water</title>
+  </head>
+  <body>
+    <h1 data-filter-by="text" data-evalby="text|font-size|font-weight|color">Drink Water</h1>
+    <h3 data-filter-by="text" data-evalby="text|font-size|font-weight|color">Goal: 2 Liters</h3>
+
+    <div class="cup" data-filter-by="border-bottom-right-radius" data-evalby="border-bottom-right-radius|border-right-color|border-right-width|background-color|height|width">
+      <div class="remained" id="remained">
+        <span id="liters" data-filter-by="has_text" data-evalby="font-size|font-weight|color"></span>
+        <small data-filter-by="text" data-evalby="text|font-size|font-weight|color">Remained</small>
+      </div>
+
+      <div class="percentage" id="percentage" data-filter-by="has_text" data-evalby="font-size|font-weight|color|background-color|height"></div>
+    </div>
+
+    <p class="text" data-filter-by="text" data-evalby="text|font-size|font-weight|color">Select how many glasses of water that you have drank</p>
+
+    <div class="cups">
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+      <div class="cup cup-small" data-filter-by="text" data-evalby="text|font-size|font-weight|color|background-color|border-bottom-right-radius|height|width">250 ml</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

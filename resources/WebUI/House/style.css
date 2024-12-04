@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(103, 150, 103);
+  display: grid;
+  place-items: center;
+}
+
+.house {
+  width: 110rem;
+  height: 70rem;
+  background-color: #efefef;
+  position: relative;
+  perspective: 100rem;
+}
+
+.main-roof {
+  width: 110%;
+  height: 30rem;
+  background-color: rgb(8, 67, 145);
+  position: absolute;
+  top: -10rem;
+  left: -5%;
+  transform: rotateX(20deg);
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  box-shadow: 0.5rem 1rem 2rem #222;
+}
+
+.window {
+  width: 12rem;
+  height: 15rem;
+  background-color: #aaa;
+  border: 0.4rem solid #333;
+  position: absolute;
+}
+
+.window::before {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: #333;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+
+.window::after {
+  content: "";
+  width: 0.4rem;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-left-window {
+  top: 22rem;
+  left: 10rem;
+  border-radius: 50% 50% 0 0;
+}
+
+.top-right-window {
+  top: 22rem;
+  right: 10rem;
+  border-radius: 50% 50% 0 0;
+}
+
+.bottom-left-window {
+  top: 43rem;
+  left: 10rem;
+}
+
+.bottom-right-window {
+  top: 43rem;
+  right: 10rem;
+}
+
+.room {
+  width: 40rem;
+  height: 80%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  perspective: 100rem;
+}
+
+.room-roof {
+  width: 110%;
+  height: 20rem;
+  background-color: rgb(8, 67, 145);
+  position: absolute;
+  top: -10rem;
+  left: -5%;
+  transform: rotateX(30deg);
+  box-shadow: 0.2rem 0.5rem 1.5rem #000;
+  border-radius: 0.5rem 0.5rem 0.3rem 0.3rem;
+}
+
+.top-window {
+  width: 16rem;
+  height: 17rem;
+  background-color: rgb(112, 22, 22);
+  position: absolute;
+  top: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 0 0;
+  border: 0.5rem solid #555;
+  perspective: 150rem;
+}
+
+.top-window-left {
+  width: 49.5%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 50rem;
+  border: 0.5rem solid #555;
+  transform-origin: left;
+  transition: transform 1s;
+}
+
+.top-window:hover .top-window-left {
+  transform: rotateY(-50deg);
+}
+
+.top-window-left::before {
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+  background-color: #555;
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+
+.top-window-right {
+  width: 49.5%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 50rem;
+  border: 0.5rem solid #555;
+  transform-origin: right;
+  transition: transform 1s;
+}
+
+.top-window:hover .top-window-right {
+  transform: rotateY(50deg);
+}
+
+.top-window-right::before {
+  content: "";
+  width: 100%;
+  height: 0.5rem;
+  background-color: #555;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+.door-frame {
+  width: 14rem;
+  height: 18rem;
+  background-color: #444;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.6rem solid #222;
+  border-bottom: none;
+  perspective: 100rem;
+}
+
+.door {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(85, 68, 24);
+  transform-origin: right;
+  transition: transform 1s 0.5s;
+}
+
+.door.change {
+  transform: rotateY(30deg);
+}
+
+.door-handle {
+  width: 3rem;
+  height: 0.7rem;
+  background-color: #999;
+  position: absolute;
+  top: 45%;
+  left: 1rem;
+  border-radius: 100% 0.5rem 0.5rem 100%;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.door.change .door-handle {
+  transform: rotateZ(20deg);
+}

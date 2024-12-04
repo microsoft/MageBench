@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Sliding Sign In &amp; Sign Up Form</title>
+</head>
+<body>
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+<form>
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Sign Up</h1>
+<div class="social-container">
+<a class="social" href="#"><i class="fab fa-instagram" data-filter-by="font-family" data-evalby="font-size|color|border-radius|border"></i></a>
+<a class="social" href="#"><i class="fab fa-google" data-filter-by="font-family" data-evalby="font-size|color|border-radius|border"></i></a>
+<a class="social" href="#"><i class="fab fa-tiktok" data-filter-by="font-family" data-evalby="font-size|color|border-radius|border"></i></a>
+</div>
+<span data-filter-by="text" data-evalby="font-size|color">or use your email for registration</span>
+<input placeholder="Name" type="text" data-filter-by="placeholder" data-evalby="background-color|border|padding|width"/>
+<input placeholder="Email" type="email" data-filter-by="placeholder" data-evalby="background-color|border|padding|width"/>
+<input placeholder="Password" type="password" data-filter-by="placeholder" data-evalby="background-color|border|padding|width"/>
+<button onclick="return false;" data-filter-by="text" data-evalby="background|color|font-size|font-weight|padding|border-radius">Sign Up</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+<form>
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Sign In</h1>
+<div class="social-container">
+<a class="social" href="#"><i class="fab fa-instagram" data-filter-by="font-family" data-evalby="font-size|color|border-radius|border"></i></a>
+<a class="social" href="#"><i class="fab fa-google" data-filter-by="font-family" data-evalby="font-size|color|border-radius|border"></i></a>
+<a class="social" href="#"><i class="fab fa-tiktok" data-filter-by="font-family" data-evalby="font-size|color|border-radius|border"></i></a>
+</div>
+<span data-filter-by="text" data-evalby="font-size|color">or use your account</span>
+<input placeholder="Email" type="email" data-filter-by="placeholder" data-evalby="background-color|border|padding|width"/>
+<input placeholder="Password" type="password" data-filter-by="placeholder" data-evalby="background-color|border|padding|width"/>
+<a href="#" data-filter-by="text" data-evalby="color|font-size|text-decoration|margin">Forgot your password?</a>
+<button onclick="return false;" data-filter-by="text" data-evalby="background|color|font-size|font-weight|padding|border-radius">Sign In</button>
+</form>
+</div>
+<div class="overlay-container">
+<div class="overlay">
+<div class="overlay-panel overlay-left">
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Welcome Back!</h1>
+<p data-filter-by="text" data-evalby="font-size|font-weight|line-height|letter-spacing|margin">Please login with your personal info</p>
+<button class="ghost" id="signIn" data-filter-by="text" data-evalby="background|color|font-size|font-weight|padding|border-radius|border-color">Sign In</button>
+</div>
+<div class="overlay-panel overlay-right">
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Hello, Friend!</h1>
+<p data-filter-by="text" data-evalby="font-size|font-weight|line-height|letter-spacing|margin">Enter your personal details and start your journey with us</p>
+<button class="ghost" id="signUp" data-filter-by="text" data-evalby="background|color|font-size|font-weight|padding|border-radius|border-color">Sign Up</button>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

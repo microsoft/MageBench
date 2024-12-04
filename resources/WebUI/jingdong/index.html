@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东官网方放大镜功能实现</title>
+    <style>
+        #normal{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            float: left;
+            margin-right: 20px;
+        }
+        #nimg{
+            width: 100%;
+        }
+        #big{
+            position: relative;
+            display: none;
+            width: 600px;
+            height: 600px;
+            overflow: hidden;
+        }
+        #bimg{
+            position: absolute;
+            left: 10px;
+        }
+        #move{
+            position: absolute;
+            display: flex;
+            width: 300px;
+            height: 300px;
+            left: 0;
+            top: 0;
+            background-color: gainsboro;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="normal">
+        <img src="ad钙.jpg" alt="" id="nimg" data-filter-by="src" data-evalby="width|height|position">
+        <div id="move" data-filter-by="background-color" data-evalby="width|height|background-color|opacity"></div>
+    </div>
+    <div id="big">
+        <img src="大ad钙.jpg" alt="" id="bimg" data-filter-by="src" data-evalby="width|height|position">
+    </div>
+</body>
+<script>
+    var ndiv = document.getElementById('normal');
+    var nimg = document.getElementById('nimg');
+    var move = document.getElementById('move');
+    var bdiv = document.getElementById('big');
+    var bimg = document.getElementById('bimg');
+    //移动鼠标查看对应大图
+    ndiv.onmousemove =function(e){
+        var x = e.pageX -ndiv.offsetLeft-move.offsetWidth/2;
+        var y = e.pageY - ndiv.offsetTop - move.offsetHeight/2;
+        if(x<0){
+            x=0
+        }else if(x>ndiv.offsetWidth-move.offsetWidth){
+            x=ndiv.offsetWidth-move.offsetWidth;
+        }
+        if (y<0) {
+            y=0;
+        }else if(y>ndiv.offsetHeight-move.offsetHeight){
+            y=ndiv.offsetHeight-move.offsetHeight;
+        }
+        move.style.left = x+"px";
+        move.style.top = y+"px";
+        bimg.style.left = -x *(bimg.offsetWidth/nimg.offsetWidth) +"px";
+        bimg.style.top = -y *(bimg.offsetHeight/nimg.offsetHeight) +"px";
+    }
+    //鼠标悬浮与离开效果
+    ndiv.onmouseover =function(){
+        bdiv.style.display = "block";
+        move.style.display = "block";
+    }
+    ndiv.onmouseout =function(){
+        bdiv.style.display = "none";
+        move.style.display = "none";
+    }
+</script>
+</html>

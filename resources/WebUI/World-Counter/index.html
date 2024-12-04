@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="title" data-filter-by="text" data-evalby="font-size|font-weight|color|margin-top|margin-bottom">Word Counter</h2>
+      <textarea class="text-input" placeholder="Paste text here..." data-filter-by="placeholder" data-evalby="width|height|margin-bottom|resize|padding|box-sizing"></textarea>
+      <section>
+        <strong data-filter-by="text" data-evalby="font-size|font-weight|color">Word Count: </strong>
+        <span class="word-count" data-filter-by="text" data-evalby="font-size|font-weight|color">0</span>
+      </section>
+      <section>
+        <strong data-filter-by="text" data-evalby="font-size|font-weight|color">Letter Count: </strong>
+        <span class="letter-count" data-filter-by="text" data-evalby="font-size|font-weight|color">0</span>
+      </section>
+      <section>
+        <strong data-filter-by="text" data-evalby="font-size|font-weight|color">Number Of Spaces: </strong>
+        <span class="space-count" data-filter-by="text" data-evalby="font-size|font-weight|color">0</span>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

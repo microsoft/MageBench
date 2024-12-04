@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy and Move</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="btns-container">
+        <button class="copyBtn btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|margin|cursor">Copy Text</button>
+      </div>
+      <textarea name="copyTxt" cols="50" rows="3" data-filter-by="text" data-evalby="font-size|font-weight|color|margin|outline">Hello World</textarea>
+    </div>
+
+    <div class="output-container">
+      <div class="output" data-filter-by="has_text" data-evalby="font-size|font-weight|color|background-color|position|bottom|right|display|justify-content|align-items|text-align|width|height"></div>
+      <button class="moverBtn btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|margin|cursor">Move Text</button>
+      <textarea name="finalTxt" cols="50" rows="3" data-filter-by="placeholder" data-evalby="font-size|font-weight|color|margin|outline"></textarea>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

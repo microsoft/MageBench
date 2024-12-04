@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drawing App</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="700" data-filter-by="border" data-evalby="border|width|height"></canvas>
+    <div class="toolbox" data-filter-by="background-color" data-evalby="background-color|border|display|width|padding">
+      <button id="decrease" data-filter-by="text" data-evalby="font-size|background-color|border|height|width|margin|padding|cursor">-</button>
+      <span id="size" data-filter-by="text" data-evalby="font-size|background-color|border|height|width|margin|padding|cursor">10</span>
+      <button id="increase" data-filter-by="text" data-evalby="font-size|background-color|border|height|width|margin|padding|cursor">+</button>
+      <input type="color" id="color" data-filter-by="background-color" data-evalby="background-color|border|height|width|margin|padding|cursor">
+      <button id="clear" data-filter-by="text" data-evalby="font-size|background-color|border|height|width|margin|padding|cursor">X</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

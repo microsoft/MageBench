@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookList App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <form id="book-form">
+        <div>
+          <label for="title" data-filter-by="text" data-evalby="font-size|font-weight|color">Book Title</label>
+          <input type="text" id="title" data-filter-by="id" data-evalby="width|padding|margin-top|margin-bottom|border-radius" />
+        </div>
+        <div>
+          <label for="author" data-filter-by="text" data-evalby="font-size|font-weight|color">Book Author</label>
+          <input type="text" id="author" data-filter-by="id" data-evalby="width|padding|margin-top|margin-bottom|border-radius" />
+        </div>
+        <div>
+          <label for="year" data-filter-by="text" data-evalby="font-size|font-weight|color">Published Year</label>
+          <input type="number" id="year" data-filter-by="id" data-evalby="width|padding|margin-top|margin-bottom|border-radius" />
+        </div>
+        <button type="submit" class="btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background|padding|margin-bottom">Add Book</button>
+      </form>
+
+      <section class="table">
+        <section class="table-section">
+          <div data-filter-by="text" data-evalby="font-size|font-weight|color|background">Title</div>
+          <div data-filter-by="text" data-evalby="font-size|font-weight|color|background">Author</div>
+          <div data-filter-by="text" data-evalby="font-size|font-weight|color|background">Year</div>
+        </section>
+
+        <section id="book-list"></section>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

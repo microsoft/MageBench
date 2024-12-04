@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Age Calculator</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Age Calculator</h1>
+<div class="form">
+<label for="birthday" data-filter-by="text" data-evalby="font-size|font-weight|color">Enter you date of birth</label>
+<input id="birthday" name="birthday" type="date" data-filter-by="type" data-evalby="padding|border|border-radius|width"/>
+<button id="btn" data-filter-by="text" data-evalby="background-color|color|border|padding|border-radius|margin-top|cursor|transition">Calculate Age</button>
+<p id="result" data-filter-by="has_text" data-evalby="margin-top|font-size|font-weight">Your age is 21 years old</p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

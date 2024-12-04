@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blurred Background Popup</title>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<h1 data-filter-by="text" data-evalby="font-size|color|font-family|letter-spacing|text-shadow">Welcome to our website</h1>
+<button class="btn" data-filter-by="text" data-evalby="padding|width|background-color|border|border-radius|font-size">Click to join</button>
+</div>
+<div class="popup-container active">
+<h4 data-filter-by="text" data-evalby="font-size|margin|font-family|color">20% OFF Offer</h4>
+<label for="email" data-filter-by="text" data-evalby="color|font-family">Your Email</label>
+<input class="input" name="email" placeholder="Enter Your Email" type="email" data-filter-by="placeholder" data-evalby="border|padding|margin|font-size|text-align|color"/>
+<button class="popup-btn" data-filter-by="text" data-evalby="background-color|padding|font-size|border">Join</button>
+<div class="close-icon">
+<i class="fas fa-times fa-2x" data-filter-by="has_text" data-evalby="font-size|color"></i>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

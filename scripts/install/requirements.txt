@@ -1,0 +1,6 @@
+vllm
+gym-sokoban
+openai
+selenium
+gym == 0.26.2
+moviepy

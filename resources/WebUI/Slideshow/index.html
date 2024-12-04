@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <title>Slideshow</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slideshow-wrapper">
+        <div class="control left-arrow">
+          <div class="arrow">
+            <div class="line line-1" data-filter-by="background-color" data-evalby="width|height|background-color|transform"></div>
+            <div class="line line-2" data-filter-by="background-color" data-evalby="width|height|background-color|transform"></div>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="slide slide-1">
+            <img src="images/slide-img-1.jpg" data-filter-by="src" data-evalby="opacity|height|width|object-fit" />
+          </div>
+          <div class="slide slide-2">
+            <img src="images/slide-img-2.jpg" data-filter-by="src" data-evalby="opacity|height|width|object-fit" />
+          </div>
+          <div class="slide slide-3">
+            <img src="images/slide-img-3.jpg" data-filter-by="src" data-evalby="opacity|height|width|object-fit" />
+          </div>
+        </div>
+        <div class="control right-arrow">
+          <div class="arrow">
+            <div class="line line-3" data-filter-by="background-color" data-evalby="width|height|background-color|transform"></div>
+            <div class="line line-4" data-filter-by="background-color" data-evalby="width|height|background-color|transform"></div>
+          </div>
+        </div>
+        <div class="play-pause">
+          <i class="fas fa-play" data-filter-by="class" data-evalby="color|font-size"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #051321;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 40rem;
+}
+
+.card-bio {
+  background-color: #45a564;
+  padding: 3rem 3rem 8rem 3rem;
+  display: flex;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  z-index: 100;
+}
+
+.img-wrapper {
+  width: 9rem;
+  height: 9rem;
+  margin-right: 3rem;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.person-info {
+  width: 60%;
+  font-family: "Dosis", serif;
+  color: #fff;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.person-info h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.person-info p {
+  font-size: 1.8rem;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: -2.5rem;
+  right: 10rem;
+  width: 20rem;
+  height: 6rem;
+  background-color: #2b303a;
+  color: #fff;
+  border-radius: 5rem;
+  border: none;
+  font-family: "Dosis", serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.change .card-btn {
+  width: 6rem;
+  right: 3rem;
+  bottom: -3rem;
+  border-radius: 50%;
+}
+
+.card-btn-contact {
+  transition: all 0.5s 0.1s;
+}
+
+.card-btn-contact,
+.card-btn i {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.change .card-btn-contact {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s;
+}
+
+.card-btn i {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .card-btn i {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.card-contact {
+  background-color: #2d814d;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.change .card-contact {
+  transform: translateY(0);
+}
+
+.card-contact h4 {
+  font-family: "Dosis", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+  transform: scale(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.change .card-contact h4 {
+  transform: scale(1);
+}
+
+.card-social {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.email {
+  transition: all 0.5s 0.3s;
+}
+
+.fb {
+  transition: all 0.5s 0.5s;
+}
+
+.linkedin {
+  transition: all 0.5s 0.7s;
+}
+
+.change .card-social {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.email .icon-wrapper {
+  background-color: #dd4b39;
+}
+
+.fb .icon-wrapper {
+  background-color: #3b5998;
+}
+
+.linkedin .icon-wrapper {
+  background-color: #007bb6;
+}
+
+.icon-wrapper i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.contact-details h4 {
+  font-family: "Dosis", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.email h4 {
+  color: #dd4b39;
+}
+
+.fb h4 {
+  color: #3b5998;
+}
+
+.linkedin h4 {
+  color: #007bb6;
+}
+
+.contact-details p {
+  font-family: "Dosis", serif;
+  font-size: 1.4rem;
+  color: #444;
+  letter-spacing: 0.1rem;
+}
+
+.card-social span {
+  margin-left: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #999;
+}

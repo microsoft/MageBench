@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>学生就业统计表</title>
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- 
+    achieve： localStorage存储本地数据，渲染到页面
+   -->
+</head>
+
+<body>
+  <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">学生就业统计表</h1>
+  <form class="info" autocomplete="off">
+    <input type="text" class="uname" name="uname" placeholder="姓名" data-filter-by="placeholder" data-evalby="width|height|border|padding-left|margin-right" />
+    <input type="text" class="age" name="age" placeholder="年龄" data-filter-by="placeholder" data-evalby="width|height|border|padding-left|margin-right" />
+    <input type="text" class="salary" name="salary" placeholder="薪资" data-filter-by="placeholder" data-evalby="width|height|border|padding-left|margin-right" />
+    <select name="gender" class="gender" data-filter-by="name" data-evalby="width|height|border|padding-left|margin-right">
+      <option value="男">男</option>
+      <option value="女">女</option>
+    </select>
+    <select name="city" class="city" data-filter-by="name" data-evalby="width|height|border|padding-left|margin-right">
+      <option value="北京">北京</option>
+      <option value="上海">上海</option>
+      <option value="广州">广州</option>
+      <option value="深圳">深圳</option>
+      <option value="曹县">曹县</option>
+    </select>
+    <button class="add" data-filter-by="text" data-evalby="width|height|background-color|color|font-size">
+      <i class="iconfont icon-tianjia" data-filter-by="class" data-evalby="font-size|color"></i>添加
+    </button>
+  </form>
+
+  <div class="title" data-filter-by="class" data-evalby="width|height|line-height|padding-right|border|background-color|text-align">共有数据<span data-filter-by="text" data-evalby="height|margin|text-align|line-height|color|font-weight">0</span>条</div>
+  <table>
+    <thead>
+      <tr>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">ID</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">姓名</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">年龄</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">性别</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">薪资</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">就业城市</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">录入时间</th>
+        <th data-filter-by="text" data-evalby="padding|background|font-size|text-align|border">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr>
+        <td>1</td>
+        <td>迪丽热巴</td>
+        <td>23</td>
+        <td>女</td>
+        <td>12000</td>
+        <td>北京</td>
+        <td>2099/9/9 08:08:08</td>
+        <td>
+          <a href="javascript:">
+            <i class="iconfont icon-shanchu"></i>
+            删除
+          </a>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+  <script>
+    // 参考数据
+    const initData = [
+      {
+        stuId: 1,
+        uname: '迪丽热巴',
+        age: 22,
+        salary: '12000',
+        gender: '女',
+        city: '北京',
+        time: '2099/9/9 08:08:08'
+      }
+    ]
+    localStorage.setItem('data', JSON.stringify(initData))
+    // 1. 渲染业务
+    // 1.1 先读取本地存储的数据
+    // (1). 本地存储有数据则记得转换为对象然后存储到变量里面，后期用于渲染页面
+    // (2). 如果没有数据，则用 空数组来代替
+    const arr = JSON.parse(localStorage.getItem('data')) || []
+    console.log(arr)
+    // 1.2 利用map和join方法来渲染页面
+    const tbody = document.querySelector('tbody')
+    function render() {
+      // (1). 利用map遍历数组，返回对应tr的数组
+      const trArr = arr.map(function (ele, index) {
+        return `
+          <tr data-filter-by="has_text" data-evalby="padding|color|font-size|border">
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.stuId}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.uname}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.age}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.gender}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.salary}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.city}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">${ele.time}</td>
+            <td data-filter-by="has_text" data-evalby="padding|color|font-size|border">
+              <a href="javascript:" data-id="${index}" data-filter-by="has_text" data-evalby="width|height|text-align|line-height|color|background-color">
+                <i class="iconfont icon-shanchu" data-filter-by="class" data-evalby="font-size|color"></i>
+                删除
+              </a>
+            </td>
+          </tr>
+        `
+      })
+
+      console.log(trArr)
+      // (2). 把数组转换为字符串 join
+      // (3). 把生成的字符串追加给tbody 
+      tbody.innerHTML = trArr.join('')
+      // 显示共计有几条数据
+      document.querySelector('.title span').innerHTML = arr.length
+    }
+    render()
+
+    // 2. 新增业务
+    const info = document.querySelector('.info')
+    const uname = document.querySelector('.uname')
+    const age = document.querySelector('.age')
+    const salary = document.querySelector('.salary')
+    const gender = document.querySelector('.gender')
+    const city = document.querySelector('.city')
+
+    // 2.1 form表单注册提交事件，阻止默认行为
+    info.addEventListener('submit', function (e) {
+      e.preventDefault()
+      // 2.2 非空判断
+      if (!uname.value || !age.value || !salary.value) {
+        return alert('输入内容不能为空')
+      }
+      // 2.3 给 arr 数组追加对象，里面存储 表单获取过来的数据
+      arr.push({
+        // 处理 stuId：数组最后一条数据的stuId + 1      
+        stuId: arr.length ? arr[arr.length - 1].stuId + 1 : 1,
+        uname: uname.value,
+        age: age.value,
+        salary: salary.value,
+        gender: gender.value,
+        city: city.value,
+        time: new Date().toLocaleString()
+      })
+      // 2.4 渲染页面和重置表单（reset()方法）
+      render()
+      this.reset() // 重置表单
+
+      // 2.5 把数组重新存入本地存储里面，记得转换为JSON字符串存储
+      localStorage.setItem('data', JSON.stringify(arr))
+    })
+
+    // 3. 删除业务
+    // 3.1 采用事件委托形式，给 tbody 注册点击事件
+    tbody.addEventListener('click', function (e) {
+      // 判断是否点击的是删除按钮  A 链接
+      if (e.target.tagName === 'A') {
+        // alert(11)
+        // 3.2 得到当前点击链接的索引号。渲染数据的时候，动态给a链接添加自定义属性例如 data-id="0"
+        console.log(e.target.dataset.id)
+
+        // 确认框 确认是否要真的删除
+        if (confirm('您确定要删除这条数据吗？')) {
+          // 3.3 根据索引号，利用 splice 删除数组这条数据
+          arr.splice(e.target.dataset.id, 1)
+          // 3.4 重新渲染页面 
+          render()
+          // 3.5 把最新 arr 数组存入本地存储
+          localStorage.setItem('data', JSON.stringify(arr))
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>

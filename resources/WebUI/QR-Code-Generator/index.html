@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator | Code Traversal</title>
+</head>
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1 data-filter-by="text" data-evalby="font-size|text-align|color|margin-bottom|text-transform">Generate QR Code</h1>
+            <input type="text" placeholder="Type your text or URL" id="qr-text" data-filter-by="placeholder" data-evalby="width|margin-block|padding|border-radius|font-size|border">
+            <div>
+                <label for="sizes" data-filter-by="text" data-evalby="color|font-size">Select Size:</label>
+                <select id="sizes" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">
+                    <option value="100" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">100x100</option>
+                    <option value="200" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">200x200</option>
+                    <option value="300" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">300x300</option>
+                    <option value="400" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">400x400</option>
+                    <option value="500" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">500x500</option>
+                    <option value="600" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">600x600</option>
+                    <option value="700" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">700x700</option>
+                    <option value="800" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">800x800</option>
+                    <option value="900" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">900x900</option>
+                    <option value="1000" data-filter-by="value" data-evalby="padding|border-radius|font-size|border">1000x1000</option>
+                </select>
+            </div>
+        </div>
+        <div class="qr-body" data-filter-by="has_text" data-evalby="display|place-items|padding"></div>
+        <div class="qr-footer">
+            <a href="" id="generateBtn" data-filter-by="text" data-evalby="background-color|text-decoration|font-size|padding|margin-inline|color|font-weight|border-radius">Generate</a>
+            <a href="" id="downloadBtn" download="QR_Code.png" data-filter-by="text" data-evalby="background-color|text-decoration|font-size|padding|margin-inline|color|font-weight|border-radius">Download</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>

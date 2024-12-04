@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Input Wave</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Please Login</h1>
+      <form>
+        <div class="form-control">
+          <input type="text" required data-filter-by="type" data-evalby="background-color|border-bottom-color|font-size|color">
+          <label data-filter-by="text" data-evalby="font-size|font-weight|color">Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" required data-filter-by="type" data-evalby="background-color|border-bottom-color|font-size|color">
+          <label data-filter-by="text" data-evalby="font-size|font-weight|color">Password</label>
+        </div>
+
+        <button class="btn" data-filter-by="text" data-evalby="background|padding|font-size|border-radius">Login</button>
+
+        <p class="text" data-filter-by="text" data-evalby="font-size|font-weight|color">Don't have an account? <a href="#" data-filter-by="text" data-evalby="color|text-decoration">Register</a> </p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App using JavaScript</title>
+</head>
+<body>
+    <div class="alert" data-filter-by="text" data-evalby="background-color|border-radius|width|padding|position|top|display">Alert</div>
+    <div class="btn startBtn" data-filter-by="text" data-evalby="width|font-size|font-weight|padding|margin|background-color|color|border|border-radius|cursor|text-align">Start</div>
+    <div class="container">
+        <h1 data-filter-by="text" data-evalby="font-size|margin-bottom|text-decoration|text-underline-offset">Let's play a Quiz Game</h1>
+        <div class="question" data-filter-by="has_text" data-evalby="font-size|margin-top"></div>
+        <div class="choices" data-filter-by="has_text" data-evalby="margin-top"></div>
+        <button class="btn nextBtn" data-filter-by="text" data-evalby="width|font-size|font-weight|padding|margin|background-color|color|border|border-radius|cursor">Next</button>
+        <div class="scoreCard" data-filter-by="has_text" data-evalby="font-size|margin-top"></div>
+        <div class="timer" data-filter-by="has_text" data-evalby="position|top|right|width|height|border-radius|background-color|border|font-size|font-weight|padding|display">15</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

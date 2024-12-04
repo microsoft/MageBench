@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+* {
+	margin: 0 auto;
+	padding: 0 0;
+}
+
+/* 导航栏 */
+#nav {
+	background-image: url(../images/head_bg.jpg);
+	width: 100%;
+	height: 128px;
+	padding: 0 auto;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	/* ul不可以设置auto，因为块标签默认占据整行 */
+	margin: 0 18%;
+	list-style: none;
+	text-align: center;
+}
+
+li {
+	float: left;
+	display: inline-block;
+}
+
+.dh a {
+	display: inline-block;
+	width: 119px;
+	height: 91px;
+	line-height: 65px;
+	text-align: center;
+	/* margin-top: 10px; */
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+
+}
+
+.dh a:hover {
+	background-image: url(../images/xuanfu.png);
+}
+
+/* 内容-总 */
+#content {
+	background-color: #fff9ed;
+	text-align: center;
+}
+
+/* 内容-section */
+#section {
+	background-color: #ec6e47;
+	height: 334px;
+	width: 920px;
+	padding: 10px 30px;
+}
+
+#zong {
+	margin: 0 auto;
+	background-color: #FFF;
+	height: 314px;
+	width: 900px;
+	padding: 10px 10px;
+}
+
+dt {
+	float: left;
+}
+
+dd {
+	background-color: #242424;
+	text-align: center;
+}
+
+#left {
+	height: 314px;
+	width: 288px;
+	float: left;
+}
+
+#one {
+	height: 169px;
+}
+
+#two {
+	height: 137px;
+	margin-top: 10px;
+}
+
+#middle {
+	height: 314px;
+	width: 288px;
+	float: left;
+	margin-left: 5px;
+}
+
+#three {
+	height: 117px;
+}
+
+#four {
+	height: 188px;
+	margin-top: 10px;
+}
+
+#right {
+	height: 314px;
+	width: 310px;
+	float: left;
+	margin-left: 5px;
+}
+
+/* 内容-cl */
+#cl {
+	display: table;/* 内容像表格一样对齐 */
+}
+
+#cl-title {
+	background-color: #ec6e47;
+	color: #FFF;
+	/* 上右下左 */
+	margin: 100px 0px 0 0px;
+	padding: 10px;
+	width: 250px;
+	font-size: 20px;
+}
+
+#cl-content {
+	background-color: #FFF;
+	height: 372px;
+	width: 960px;
+	padding-left: 15px;
+	border: burlywood 1px solid;
+}
+
+.cl-1 {
+	width: 229px;
+	float: left;
+	border: burlywood 1px solid;
+	margin: 15px 3px;
+}
+
+.cl-dt {
+	border-bottom: burlywood 1px solid;
+}
+
+.cl-dd {
+	font-size: 22px;
+	color: gray;
+	display: inline-block;
+	margin: 20px;
+}
+
+.cl-buy {
+	/* text-align: center; */
+	background-color: #ec6e47;
+	width: 85%;
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.cl-buy-img {
+	float: left;
+
+}
+
+.cl-buy-span {
+	color: #FFF;
+	font-size: 18px;
+
+}
+
+/* footer */
+footer {
+	height: 150px;
+	background-color: #242424;
+	color: #FFF;
+	display: flex;
+	/* 垂直居中对齐 */
+	align-items: center;
+	margin-top: 50px;
+
+}

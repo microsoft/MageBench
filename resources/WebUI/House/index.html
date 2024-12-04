@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="house">
+        <div class="main-roof" data-filter-by="background-color" data-evalby="width|height|background-color|position|top|left|transform|border-radius|box-shadow"></div>
+        <div class="window top-left-window" data-filter-by="border-radius" data-evalby="width|height|background-color|border|position|top|left|border-radius"></div>
+        <div class="window top-right-window" data-filter-by="border-radius" data-evalby="width|height|background-color|border|position|top|right|border-radius"></div>
+        <div class="window bottom-left-window" data-filter-by="position" data-evalby="width|height|background-color|border|position|top|left"></div>
+        <div class="window bottom-right-window" data-filter-by="position" data-evalby="width|height|background-color|border|position|top|right"></div>
+        <div class="room">
+          <div class="room-roof" data-filter-by="background-color" data-evalby="width|height|background-color|position|top|left|transform|box-shadow|border-radius"></div>
+          <div class="top-window" data-filter-by="background-color" data-evalby="width|height|background-color|position|top|left|transform|border|border-radius">
+            <div class="top-window-left" data-filter-by="background-color" data-evalby="width|height|background-color|position|top|left|border|border-top-left-radius|transform-origin|transition"></div>
+            <div class="top-window-right" data-filter-by="background-color" data-evalby="width|height|background-color|position|top|right|border|border-top-right-radius|transform-origin|transition"></div>
+          </div>
+          <div class="door-frame">
+            <div class="door" data-filter-by="background-color" data-evalby="width|height|background-color|transform-origin|transition">
+              <div class="door-handle" data-filter-by="background-color" data-evalby="width|height|background-color|position|top|left|border-radius|transform-origin|transition"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

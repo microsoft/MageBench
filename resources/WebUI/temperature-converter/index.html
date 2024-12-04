@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temperature Converter</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<h1 class="heading" data-filter-by="text" data-evalby="font-size|color|font-family">Temperature Converter</h1>
+<div class="temp-container">
+<label for="celsius" data-filter-by="text" data-evalby="font-size|font-weight|color">Celsius:</label>
+<input class="input" id="celsius" name="celsius" onchange="computeTemp(event)" placeholder="Enter Temperature" type="number" data-filter-by="id" data-evalby="width|font-family|padding|background|border-color|color|font-size"/>
+</div>
+<div class="temp-container">
+<label for="fahrenheit" data-filter-by="text" data-evalby="font-size|font-weight|color">Fahrenheit:</label>
+<input class="input" id="fahrenheit" name="fahrenheit" onchange="computeTemp(event)" placeholder="Enter Temperature" type="number" data-filter-by="id" data-evalby="width|font-family|padding|background|border-color|color|font-size"/>
+</div>
+<div class="temp-container">
+<label for="kelvin" data-filter-by="text" data-evalby="font-size|font-weight|color">Kelvin:</label>
+<input class="input" id="kelvin" name="kelvin" onchange="computeTemp(event)" placeholder="Enter Temperature" type="number" data-filter-by="id" data-evalby="width|font-family|padding|background|border-color|color|font-size"/>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

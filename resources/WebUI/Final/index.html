@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner-text">
+        <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">CodeAndCreate</h1>
+        <p data-filter-by="text" data-evalby="font-size|font-weight|color">Learn how to code</p>
+      </div>
+      <div class="btns">
+        <button class="btn login-btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">Login</button>
+        <button class="btn signup-btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">Sign Up</button>
+      </div>
+      <div class="form-container">
+        <div class="signup-form-wrapper modal">
+          <div class="x-btn signup-x" data-filter-by="text" data-evalby="font-size|color">
+            &times;
+          </div>
+          <div class="form-header">
+            <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">CodeAndCreate</h1>
+            <h3 data-filter-by="text" data-evalby="font-size|font-weight|color">Join Us</h3>
+          </div>
+          <form class="form">
+            <div class="input-group">
+              <i class="fas fa-user" data-filter-by="class" data-evalby="font-size|color"></i>
+              <input type="text" placeholder="Username" data-filter-by="placeholder" data-evalby="font-size|color|background-color|border-radius" />
+            </div>
+            <div class="input-group">
+              <i class="far fa-envelope" data-filter-by="class" data-evalby="font-size|color"></i>
+              <input type="email" placeholder="Email" data-filter-by="placeholder" data-evalby="font-size|color|background-color|border-radius" />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-key" data-filter-by="class" data-evalby="font-size|color"></i>
+              <input type="password" placeholder="Password" data-filter-by="placeholder" data-evalby="font-size|color|background-color|border-radius" />
+            </div>
+            <button type="button" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">Sign Up</button>
+          </form>
+        </div>
+        <div class="login-form-wrapper modal">
+          <div class="x-btn login-x" data-filter-by="text" data-evalby="font-size|color">
+            &times;
+          </div>
+          <div class="form-header">
+            <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">CodeAndCreate</h1>
+            <h3 data-filter-by="text" data-evalby="font-size|font-weight|color">Login</h3>
+          </div>
+          <form class="form">
+            <div class="input-group">
+              <i class="fas fa-user" data-filter-by="class" data-evalby="font-size|color"></i>
+              <input type="text" placeholder="Username" data-filter-by="placeholder" data-evalby="font-size|color|background-color|border-radius" />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-key" data-filter-by="class" data-evalby="font-size|color"></i>
+              <input type="password" placeholder="Password" data-filter-by="placeholder" data-evalby="font-size|color|background-color|border-radius" />
+            </div>
+            <button type="button" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

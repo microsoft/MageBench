@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Images</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Explore Best Properties</h1>
+          <p data-filter-by="text" data-evalby="font-size|font-weight|color|line-height|margin|max-width">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            saepe voluptatem iusto cupiditate iure qui quas natus facere
+            voluptates. Recusandae dicta quae doloribus repellat. A
+            reprehenderit mollitia incidunt vitae nihil.
+          </p>
+          <button data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius|padding|box-shadow">More Properties</button>
+
+          <ul>
+            <li class="btn active" data-filter-by="background-color" data-evalby="background-color|width|height|border-radius"></li>
+            <li class="btn" data-filter-by="background-color" data-evalby="background-color|width|height|border-radius"></li>
+            <li class="btn" data-filter-by="background-color" data-evalby="background-color|width|height|border-radius"></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <img src="images/0.jpg" id="banner" data-filter-by="src" data-evalby="width|height|margin-bottom" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

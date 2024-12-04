@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-wrapper">
+        <form class="signin-form">
+          <a href="#" class="signup-btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|letter-spacing|padding|border-radius">Sign Up</a>
+          <h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Sign In</h2>
+          <div class="inputs-wrapper">
+            <input type="text" placeholder="Your Email" data-filter-by="placeholder" data-evalby="width|height|padding|margin|background-color|border|border-radius|color|letter-spacing|outline" />
+            <input type="password" placeholder="Password" data-filter-by="placeholder" data-evalby="width|height|padding|margin|background-color|border|border-radius|color|letter-spacing|outline" />
+            <input type="submit" value="Sign In" data-filter-by="value" data-evalby="background-color|color|font-weight|text-transform|cursor" />
+          </div>
+        </form>
+        <form class="signup-form">
+          <a href="#" class="signin-btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|letter-spacing|padding|border-radius">Sign In</a>
+          <h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Sign Up</h2>
+          <div class="inputs-wrapper">
+            <input type="text" placeholder="Your Name" data-filter-by="placeholder" data-evalby="width|height|padding|margin|background-color|border|border-radius|color|letter-spacing|outline" />
+            <input type="text" placeholder="Your Email" data-filter-by="placeholder" data-evalby="width|height|padding|margin|background-color|border|border-radius|color|letter-spacing|outline" />
+            <input type="password" placeholder="Password" data-filter-by="placeholder" data-evalby="width|height|padding|margin|background-color|border|border-radius|color|letter-spacing|outline" />
+            <input type="password" placeholder="Confirm Password" data-filter-by="placeholder" data-evalby="width|height|padding|margin|background-color|border|border-radius|color|letter-spacing|outline" />
+            <input type="submit" value="Sign Up" data-filter-by="value" data-evalby="background-color|color|font-weight|text-transform|cursor" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

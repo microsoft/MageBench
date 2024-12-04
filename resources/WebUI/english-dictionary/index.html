@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>English Dictionary</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<h1 class="heading" data-filter-by="text" data-evalby="font-size|font-weight|color">English Dictionary</h1>
+<input class="input" id="input" placeholder="Search a word" type="text" data-filter-by="placeholder" data-evalby="height|width|background-color|border-color|font-size|padding|border-radius"/>
+<p class="info-text" id="info-text" data-filter-by="text" data-evalby="font-size|font-weight|color">Type a word and press enter</p>
+<div class="meaning-container" id="meaning-container">
+<p>Word Title: <span class="title" id="title" data-filter-by="text" data-evalby="font-size|font-weight|color">___</span></p>
+<p>Meaning: <span class="meaning" id="meaning" data-filter-by="text" data-evalby="font-size|font-weight|color">___</span></p>
+<audio controls="" id="audio" src="" data-filter-by="src" data-evalby="display"></audio>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-ua-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>spice food</title>
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+		<script src="lib/jquery-1.11.0.min.js"></script>
+		<script src="lib/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="head-top" data-filter-by="background-color" data-evalby="background-color|padding"></div>
+			<nav class="navbar navbar-default" data-filter-by="background-color" data-evalby="background-color|padding|box-shadow">
+				<div class="containe-fluid">
+					<div class="container">
+						<div class="navbar-header">
+							<!-- logo -->
+							<a href=""><img src="images/logo.png" alt="" data-filter-by="src" data-evalby="width|height|margin-left|margin-right"></a>
+							<button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar-collapse">
+								<span class="sr-only">汉堡按钮</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- 内容部分 -->
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#" data-filter-by="text" data-evalby="font-size|font-weight|color">主页</a></li>
+								<li><a href="#" data-filter-by="text" data-evalby="font-size|font-weight|color">餐厅</a></li>
+								<li><a href="#" data-filter-by="text" data-evalby="font-size|font-weight|color">健康</a></li>
+								<li><a href="#" data-filter-by="text" data-evalby="font-size|font-weight|color">话题</a></li>
+								<li><a href="#" data-filter-by="text" data-evalby="font-size|font-weight|color">联系我们</a></li>
+							</ul>
+							<div class="navbar-right">
+								<a href="#">
+									<h3 data-filter-by="text" data-evalby="font-size|font-weight|color"><span>￥0.00<img src="images/bag.png" alt="" data-filter-by="src" data-evalby="width|height"></span></h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- 搜索区 -->
+		<div class="search" data-filter-by="background-image" data-evalby="background-image|min-height|background-size">
+			<div class="container">
+				<div class="reservation" data-filter-by="background-color" data-evalby="background-color|padding|width|margin-top">
+					<form action="" method="post">
+						<div class="form-group">
+							<input type="text" class="form-control input-lg" name="name" id="name" placeholder="请输入餐厅名" data-filter-by="placeholder" data-evalby="font-size|color|padding" />
+						</div>
+						<div class="form-group">
+							<select name="city" id="" class="form-control input-lg" data-filter-by="text" data-evalby="font-size|color|padding">
+								<option value=""> 请选择城市 </option>
+								<option value="bj"> 北京 </option>
+								<option value="sh"> 上海 </option>
+								<option value="hz"> 杭州 </option>
+							</select>
+						</div>
+						<div class="form-group">
+							<div class="searchbtn" data-filter-by="text-align" data-evalby="text-align">
+								<button type="button" class="btn btn-success btn-lg" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius|padding">
+									<span class="glyphicon glyphicon-search"></span>搜索
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- 热卖商品开始 -->
+		<div class="hot" data-filter-by="border" data-evalby="border|padding|margin">
+			<div class="container">
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+					<h3 data-filter-by="text" data-evalby="font-size|font-weight|color|margin|padding|border-bottom">米西奈斯煎饼</h3>
+					<img src="images/4.jpg" alt="" class="img-responsive" data-filter-by="src" data-evalby="width|height">
+					<div>
+						<p class="glyphicon glyphicon-thumbs-up" data-filter-by="text" data-evalby="font-size|font-weight|color|line-height|margin">两种口味可供选择</p>
+						<div class="cur">
+							<span><a class="morebtn" href="" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|border-radius|transition">添加到购物车</a></span>
+							<span>
+								<h6 data-filter-by="text" data-evalby="font-size|font-weight|color|margin">一口价：￥45.00元</h6>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+					<h3 data-filter-by="text" data-evalby="font-size|font-weight|color|margin|padding|border-bottom">米西奈斯煎饼</h3>
+					<img src="images/1.jpg" alt="" class="img-responsive" data-filter-by="src" data-evalby="width|height">
+					<div>
+						<p class="glyphicon glyphicon-thumbs-up" data-filter-by="text" data-evalby="font-size|font-weight|color|line-height|margin">两种口味可供选择</p>
+						<div class="cur">
+							<span><a class="morebtn" href="" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|border-radius|transition">添加到购物车</a></span>
+							<span>
+								<h6 data-filter-by="text" data-evalby="font-size|font-weight|color|margin">一口价：￥45.00元</h6>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+					<h3 data-filter-by="text" data-evalby="font-size|font-weight|color|margin|padding|border-bottom">米西奈斯煎饼</h3>
+					<img src="images/3.jpg" alt="" class="img-responsive" data-filter-by="src" data-evalby="width|height">
+					<div>
+						<p class="glyphicon glyphicon-thumbs-up" data-filter-by="text" data-evalby="font-size|font-weight|color|line-height|margin">两种口味可供选择</p>
+						<div class="cur">
+							<span><a class="morebtn" href="" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|padding|border-radius|transition">添加到购物车</a></span>
+							<span>
+								<h6 data-filter-by="text" data-evalby="font-size|font-weight|color|margin">一口价：￥45.00元</h6>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 尾部 -->
+		<footer class="footer" data-filter-by="background-color" data-evalby="background-color|padding">
+			<div class="container">
+				<div class="footer-left">
+					<p data-filter-by="text" data-evalby="font-size|color|line-height|margin">Copyrights <span class="glyphicon glyphicon-copyright-mark"></span>2021 响应式餐饮网站 | 版权所有</p>
+					<!-- <a href="www.hljphp.com">persistent</a> -->
+				</div>
+				<div class="footer-right">
+					<ul>
+						<li><a href="" data-filter-by="text" data-evalby="font-size|color"><span class="glyphicon glyphicon-phone-alt"></span> 联系我们</a></li>
+						<li><a href="" data-filter-by="text" data-evalby="font-size|color"><span class="glyphicon glyphicon-map-marker"></span> 公司地址</a></li>
+						<li><a href="" data-filter-by="text" data-evalby="font-size|color"><span class=""></span> 服务声明</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

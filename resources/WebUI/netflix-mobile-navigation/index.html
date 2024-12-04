@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Netflix Mobile Navigation</title>
+</head>
+<body>
+<button class="nav-btn open-btn" data-filter-by="class" data-evalby="border|background-color|cursor|font-size|position|top|left">
+<i class="fas fa-bars"></i>
+</button>
+<img alt="Logo" class="logo" src="resource1.png" data-filter-by="src" data-evalby="width"/>
+<p class="text" data-filter-by="text" data-evalby="text-transform|font-family|font-size|color">Mobile Navigation</p>
+<div class="nav nav-black">
+<div class="nav nav-red">
+<div class="nav nav-white">
+<button class="nav-btn close-btn" data-filter-by="class" data-evalby="border|background-color|cursor|font-size|position|top|right|opacity">
+<i class="fas fa-times"></i>
+</button>
+<img alt="Logo" class="logo" src="resource2.png" data-filter-by="src" data-evalby="width"/>
+<ul class="list">
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Teams</a></li>
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Locations</a></li>
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Life at Netflix</a></li>
+<li>
+<ul>
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Netflix culture memo</a></li>
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Work life balance</a></li>
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Inclusion &amp; diversity</a></li>
+<li data-filter-by="text" data-evalby="margin|font-size|color|text-decoration|text-transform"><a href="#">Blog</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

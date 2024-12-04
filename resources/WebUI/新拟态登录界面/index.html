@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <title>新拟态登录界面</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 点击会切换的那个面板 -->
+        <div class="switch-panel">
+            <!-- 登录 -->
+            <div id="login" class="switch-box switch-hidden">
+                <div class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">Welcome Back !</div>
+                <p data-filter-by="text" data-evalby="font-size|letter-spacing|line-height|text-align|color">To keep connected with us please login with your personal info</p>
+                <button id="switch1" data-filter-by="text" data-evalby="box-shadow|width|height|border-radius|font-weight|font-size|color|background|transition|cursor">SIGN IN</button>
+            </div>
+
+            <!-- 注册 -->
+            <div id="register" class="switch-box">
+                <div class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">Hello Friend !</div>
+                <p data-filter-by="text" data-evalby="font-size|letter-spacing|line-height|text-align|color">Enter your person details and start journey with us</p>
+                <button id="switch2" data-filter-by="text" data-evalby="box-shadow|width|height|border-radius|font-weight|font-size|color|background|transition|cursor">SIGN IN</button>
+            </div>
+        </div>
+
+        <section class="register-login-panel">
+            <!-- 注册界面 -->
+            <section class="register switch-hidden-2">
+                <div class="content">
+                    <h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Create Account</h2>
+                    <div class="icons">
+                        <i class="iconfont icon-github3" data-filter-by="class" data-evalby="font-size|color|margin"></i>
+                        <i class="iconfont icon-tuitetwitter44" data-filter-by="class" data-evalby="font-size|color|margin"></i>
+                        <i class="iconfont icon-weibo" data-filter-by="class" data-evalby="font-size|color|margin"></i>
+                    </div>
+                    <span data-filter-by="text" data-evalby="font-size|color|margin-top|margin-bottom">or use eamil for registeration</span>
+                    <input type="text" placeholder="Name" data-filter-by="placeholder" data-evalby="width|height|font-size|letter-spacing|background-color|border-radius|box-shadow">
+                    <input type="text" placeholder="Email" data-filter-by="placeholder" data-evalby="width|height|font-size|letter-spacing|background-color|border-radius|box-shadow">
+                    <input type="text" placeholder="Password" data-filter-by="placeholder" data-evalby="width|height|font-size|letter-spacing|background-color|border-radius|box-shadow">
+                    <button data-filter-by="text" data-evalby="box-shadow|width|height|border-radius|font-weight|font-size|color|background|transition|cursor">SIGN UP</button>
+                </div>
+            </section>
+
+            <!-- 登录界面 -->
+            <section class="login">
+                <div class="content">
+                    <h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Sign in to Website</h2>
+                    <div class="icons">
+                        <i class="iconfont icon-github3" data-filter-by="class" data-evalby="font-size|color|margin"></i>
+                        <i class="iconfont icon-tuitetwitter44" data-filter-by="class" data-evalby="font-size|color|margin"></i>
+                        <i class="iconfont icon-weibo" data-filter-by="class" data-evalby="font-size|color|margin"></i>
+                    </div>
+                    <span data-filter-by="text" data-evalby="font-size|color|margin-top|margin-bottom">or use eamil for registeration</span>
+                    <input type="text" placeholder="Name" data-filter-by="placeholder" data-evalby="width|height|font-size|letter-spacing|background-color|border-radius|box-shadow">
+                    <input type="text" placeholder="Email" data-filter-by="placeholder" data-evalby="width|height|font-size|letter-spacing|background-color|border-radius|box-shadow">
+                    <input type="text" placeholder="Password" data-filter-by="placeholder" data-evalby="width|height|font-size|letter-spacing|background-color|border-radius|box-shadow">
+                    <span data-filter-by="text" data-evalby="font-size|color">Forgot your password?</span>
+                    <button data-filter-by="text" data-evalby="box-shadow|width|height|border-radius|font-weight|font-size|color|background|transition|cursor">SIGN IN</button>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+</html>

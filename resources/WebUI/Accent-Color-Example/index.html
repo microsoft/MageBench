@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Accent Color Example</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="color-picker">
+            <p data-filter-by="text" data-evalby="font-size|font-weight|color">Pick a color 👇</p>
+            <input type="color" data-filter-by="type" data-evalby="background">
+        </div>
+
+        <fieldset class="checkboxes">
+            <legend data-filter-by="text" data-evalby="font-size|font-weight|color">Checkboxes</legend>
+            <label data-filter-by="text" data-evalby="font-size|font-weight|color"><input type="checkbox" checked data-filter-by="type" data-evalby="margin-right">One</label>
+            <label data-filter-by="text" data-evalby="font-size|font-weight|color"><input type="checkbox" checked data-filter-by="type" data-evalby="margin-right">Two</label>
+            <label data-filter-by="text" data-evalby="font-size|font-weight|color"><input type="checkbox" data-filter-by="type" data-evalby="margin-right">Three</label>
+        </fieldset>
+
+        <fieldset class="radio-buttons">
+            <legend data-filter-by="text" data-evalby="font-size|font-weight|color">Radio Buttons</legend>
+            <label data-filter-by="text" data-evalby="font-size|font-weight|color"><input type="radio" name="color-example" checked data-filter-by="type" data-evalby="margin-right">One</label>
+            <label data-filter-by="text" data-evalby="font-size|font-weight|color"><input type="radio" name="color-example" data-filter-by="type" data-evalby="margin-right">Two</label>
+            <label data-filter-by="text" data-evalby="font-size|font-weight|color"><input type="radio" name="color-example" data-filter-by="type" data-evalby="margin-right">Three</label>
+        </fieldset>
+
+        <fieldset class="range">
+            <legend data-filter-by="text" data-evalby="font-size|font-weight|color">Range slider</legend>
+            <input type="range" data-filter-by="type" data-evalby="background">
+        </fieldset>
+    </main>
+
+    <script>
+        const colorInput = document.querySelector("input[type=color]");
+        const colorVariable = "--clr-accent";
+
+        colorInput.addEventListener("change", (e) => {
+            document.documentElement.style.setProperty(colorVariable, e.target.value);
+        });
+    </script>
+
+</body>
+
+</html>

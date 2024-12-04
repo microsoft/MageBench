@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<title>My Blog</title>
+</head>
+<body>
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">My Blog</h1>
+<div class="filter-container">
+<input class="filter" id="filter" name="filter" placeholder="Filter posts..." type="text" data-filter-by="placeholder" data-evalby="width|padding|border-radius|font-size|border"/>
+</div>
+<div id="posts-container"></div>
+<div class="loader" id="loader">
+<div class="circle" data-filter-by="background-color" data-evalby="background-color|width|height|border-radius|margin"></div>
+<div class="circle" data-filter-by="background-color" data-evalby="background-color|width|height|border-radius|margin"></div>
+<div class="circle" data-filter-by="background-color" data-evalby="background-color|width|height|border-radius|margin"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

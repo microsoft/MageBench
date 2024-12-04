@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inconsolata", monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  position: absolute;
+  top: 5rem;
+  font-size: 7rem;
+  font-weight: 300;
+  color: #f03535;
+  letter-spacing: 1rem;
+  text-shadow: 0.2rem 0.2rem 0.5rem #aaa;
+}
+
+.heading span {
+  position: relative;
+}
+
+.heading-span-1 {
+  z-index: 10;
+}
+
+.heading-span-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  right: -100%;
+  transition: right 0.6s;
+}
+
+.change .heading-span-2::after {
+  right: 100%;
+}
+
+.buttons {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: #f03535;
+  border: none;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  box-shadow: 0.3rem 0.3rem 0.8rem #eee;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signin-btn {
+  background-color: #e7e7e7;
+}
+
+.change .signin-btn {
+  background-color: #fff;
+}
+
+.signup-btn {
+  background-color: #fff;
+}
+
+.change .signup-btn {
+  background-color: #e7e7e7;
+}
+
+.form-bg {
+  position: absolute;
+  width: 65rem;
+  height: 65rem;
+  box-shadow: 1.5rem 1.5rem 1.5rem #ddd;
+  transform: rotate(45deg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.form-input-wrapper {
+  margin: 1.5rem 0;
+  box-shadow: 0.5rem 0.5rem 0.5rem #eee;
+  border-radius: 5rem;
+  position: relative;
+}
+
+.form-input-wrapper:nth-child(1),
+.form-input-wrapper:nth-child(4) {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.change .form-input-wrapper:nth-child(1),
+.change .form-input-wrapper:nth-child(4) {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s 0.3s;
+}
+
+.form input {
+  width: 50rem;
+  height: 5rem;
+  background-color: #fff;
+  font-size: 1.7rem;
+  padding: 0 2rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  border-radius: 5rem;
+}
+
+.form-input {
+  box-shadow: 0.3rem 0.3rem 0.5rem #eee inset;
+  color: #888;
+}
+
+.form-input:focus {
+  box-shadow: 0.5rem 0.5rem 1rem #eee inset;
+}
+
+.message {
+  position: absolute;
+  left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: #f55e5e;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.error .message {
+  visibility: visible;
+  opacity: 1;
+}
+
+.success .form-input {
+  border: 0.1rem solid #46e75b;
+}
+
+.form-btn {
+  box-shadow: 0.5rem 0.5rem 1rem #ddd;
+  color: #f03535;
+  margin: 2rem 0;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  top: -6rem;
+  transition: top 0.3s 0.3s, box-shadow 0.3s;
+}
+
+.change .form-btn {
+  top: 1rem;
+  transition: top 0.3s, box-shadow 0.3s;
+}
+
+.form-btn:hover {
+  box-shadow: 0.5rem 0.5rem 2rem #ddd;
+}
+
+@media (max-width: 1400px) {
+  .form-bg {
+    transform: rotate(0);
+    height: 55rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .form-bg {
+    width: 55rem;
+    height: 50rem;
+    margin-bottom: 10rem;
+  }
+
+  .form input {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+
+  .heading {
+    font-size: 4rem;
+    top: 2rem;
+  }
+
+  .buttons {
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .buttons button {
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.7rem;
+  }
+
+  .form-bg {
+    height: 45rem;
+    width: 45rem;
+  }
+
+  .form input {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 42%;
+  }
+}

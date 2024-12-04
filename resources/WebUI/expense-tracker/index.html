@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Expense Tracker</title>
+</head>
+<body>
+<h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Expense Tracker</h1>
+<div class="container">
+<div class="header">
+<img alt="Expense Tracker" src="resource1.png" data-filter-by="src" data-evalby="width|opacity"/>
+<div class="balance-container">
+<h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Your Balance</h2>
+<h2 class="balance" id="balance" data-filter-by="text" data-evalby="font-size|font-weight|color|letter-spacing">$0.00</h2>
+</div>
+</div>
+<div class="inc-exp-container">
+<div>
+<h4 data-filter-by="text" data-evalby="font-size|font-weight|color">Income</h4>
+<p class="money plus" id="money-plus" data-filter-by="text" data-evalby="font-size|font-weight|color|letter-spacing|margin|color">+$0.00</p>
+</div>
+<div>
+<h4 data-filter-by="text" data-evalby="font-size|font-weight|color">Expenses</h4>
+<p class="money minus" id="money-minus" data-filter-by="text" data-evalby="font-size|font-weight|color|letter-spacing|margin|color">-$0.00</p>
+</div>
+</div>
+<h3 data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|padding-bottom|margin">History</h3>
+<ul class="list" id="list"></ul>
+<h3 data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|padding-bottom|margin">Add new transaction</h3>
+<form id="form">
+<div class="form-control">
+<label for="text" data-filter-by="text" data-evalby="font-size|font-weight|color|margin">Description</label>
+<input id="text" placeholder="Enter description..." type="text" data-filter-by="type" data-evalby="font-size|border|padding|width"/>
+</div>
+<div class="form-control">
+<label for="amount" data-filter-by="text" data-evalby="font-size|font-weight|color|margin">Amount <br/>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">(-100 = expense, 100 = income)</small></label>
+<input id="amount" placeholder="Enter amount..." type="number" data-filter-by="type" data-evalby="font-size|border|padding|width"/>
+</div>
+<button class="btn" data-filter-by="text" data-evalby="font-size|background-color|color|padding|width|border-radius">Add transaction</button>
+</form>
+</div>
+<!-- Notification -->
+<div class="notification-container" id="notification">
+<p data-filter-by="text" data-evalby="font-size|font-weight|color">Please add a description and amount</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

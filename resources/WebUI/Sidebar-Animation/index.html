@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Animatoin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Home</a></li>
+        <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">About</a></li>
+        <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Portfolio</a></li>
+        <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Projects</a></li>
+        <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Contact Us</a></li>
+      </ul>
+
+      <button class="menu" id="menu" data-filter-by="background-color" data-evalby="background-color|color|border|font-size">
+        <i class="fas fa-times"></i>
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="content" id="content">
+      <div class="container">
+        <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Register With Us</h1>
+        <form>
+          <label data-filter-by="text" data-evalby="font-size|font-weight|color">Name<span class="special" data-filter-by="text" data-evalby="font-size|font-weight|color">*</span></label>
+          <input type="text" data-filter-by="type" data-evalby="height|padding|outline" />
+          <label data-filter-by="text" data-evalby="font-size|font-weight|color">Email<span class="special" data-filter-by="text" data-evalby="font-size|font-weight|color">*</span></label>
+          <input type="email" data-filter-by="type" data-evalby="height|padding|outline" />
+          <label data-filter-by="text" data-evalby="font-size|font-weight|color">Password<span class="special" data-filter-by="text" data-evalby="font-size|font-weight|color">*</span></label>
+          <input type="password" data-filter-by="type" data-evalby="height|padding|outline" />
+          <label data-filter-by="text" data-evalby="font-size|font-weight|color">Confirm Password<span class="special" data-filter-by="text" data-evalby="font-size|font-weight|color">*</span></label>
+          <input type="password" data-filter-by="type" data-evalby="height|padding|outline" />
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

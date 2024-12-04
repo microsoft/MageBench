@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Background Slider</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div
+        class="slide active"
+        style="background-image: url('resource1.png');"
+        data-filter-by="background-image"
+        data-evalby="opacity|height|width|background-position|background-size|transition"
+      ></div>
+      <div
+        class="slide"
+        style="background-image: url('resource2.png');"
+        data-filter-by="background-image"
+        data-evalby="opacity|height|width|background-position|background-size|transition"
+      ></div>
+
+      <div
+        class="slide"
+        style="background-image: url('resource3.png');"
+        data-filter-by="background-image"
+        data-evalby="opacity|height|width|background-position|background-size|transition"
+      ></div>
+
+      <div
+        class="slide"
+        style="background-image: url('resource4.png');"
+        data-filter-by="background-image"
+        data-evalby="opacity|height|width|background-position|background-size|transition"
+      ></div>
+
+      <button
+        class="arrow left-arrow"
+        id="left"
+        data-filter-by="id"
+        data-evalby="background-color|color|padding|font-size|border|top|transform|cursor"
+      >
+        <i
+          class="fas fa-arrow-left"
+          data-filter-by="class"
+          data-evalby="font-size|color"
+        ></i>
+      </button>
+
+      <button
+        class="arrow right-arrow"
+        id="right"
+        data-filter-by="id"
+        data-evalby="background-color|color|padding|font-size|border|top|transform|cursor"
+      >
+        <i
+          class="fas fa-arrow-right"
+          data-filter-by="class"
+          data-evalby="font-size|color"
+        ></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

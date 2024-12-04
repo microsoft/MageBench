@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Let Us Know Your Feedback</title>
+  </head>
+  <body>
+    <div id="panel" class="panel-container">
+      <strong data-filter-by="text" data-evalby="font-size|font-weight|color">How satisfied are you with our <br /> customer support performance?</strong>
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="resource1.png" alt="" data-filter-by="src" data-evalby="width">
+          <small data-filter-by="text" data-evalby="font-size|font-weight|color">Unhappy</small>
+        </div>
+
+        <div class="rating">
+          <img src="resource2.png" alt="" data-filter-by="src" data-evalby="width"/>
+          <small data-filter-by="text" data-evalby="font-size|font-weight|color">Neutral</small>
+        </div>
+
+        <div class="rating active">
+          <img src="resource3.png" alt="" data-filter-by="src" data-evalby="width"/>
+          <small data-filter-by="text" data-evalby="font-size|font-weight|color">Satisfied</small>
+        </div>
+      </div>
+      <button class="btn" id="send" data-filter-by="text" data-evalby="background-color|color|border-radius|padding">Send Review</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

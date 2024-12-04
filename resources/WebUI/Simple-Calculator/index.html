@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="inputs">
+        <h1 class="result" data-filter-by="text" data-evalby="font-size|font-weight|color">Result</h1>
+        <select id="selectOp">
+          <option value="plus" data-filter-by="text" data-evalby="font-size|font-weight|color">+</option>
+          <option value="min" data-filter-by="text" data-evalby="font-size|font-weight|color">-</option>
+          <option value="dev" data-filter-by="text" data-evalby="font-size|font-weight|color">/</option>
+          <option value="multi" data-filter-by="text" data-evalby="font-size|font-weight|color">*</option>
+        </select>
+        <input type="number" class="num1" placeholder="Number 1" data-filter-by="placeholder" data-evalby="border|border-radius|padding|outline|margin-bottom" />
+        <input type="number" class="num2" placeholder="Number 2" data-filter-by="placeholder" data-evalby="border|border-radius|padding|outline|margin-bottom" />
+      </div>
+      <div class="submitBtn">
+        <button id="btn" data-filter-by="text" data-evalby="border|background|color|padding|border|margin-top|cursor">Submit</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

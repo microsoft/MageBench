@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <label for="spacing" data-filter-by="text" data-evalby="font-size|font-family|color">Spacing:</label>
+        <input
+          type="range"
+          id="spacing"
+          name="spacing"
+          min="10"
+          max="200"
+          value="10"
+          data-filter-by="type"
+          data-evalby="width|border|background"
+        />
+
+        <label for="blur" data-filter-by="text" data-evalby="font-size|font-family|color">Blur:</label>
+        <input
+          type="range"
+          id="blur"
+          name="blur"
+          min="0"
+          max="25"
+          value="10"
+          data-filter-by="type"
+          data-evalby="width|border|background"
+        />
+
+        <label for="base" data-filter-by="text" data-evalby="font-size|font-family|color">Color:</label>
+        <input
+          type="color"
+          id="base"
+          name="base"
+          value="#ffc600"
+          data-filter-by="type"
+          data-evalby="width|border|background"
+        />
+      </div>
+
+      <img
+        src="bg.png"
+        data-filter-by="src"
+        data-evalby="padding|background|filter|width"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-bio">
+          <div class="img-wrapper">
+            <img src="images/person.jpg" alt="Person" />
+          </div>
+          <div class="person-info">
+            <h3 data-filter-by="text" data-evalby="font-size|font-weight|color">Jane Brown</h3>
+            <p data-filter-by="text" data-evalby="font-size|color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <button class="card-btn">
+            <span class="card-btn-contact" data-filter-by="text" data-evalby="font-size|color">Contact Me</span>
+            <i class="fas fa-angle-up" data-filter-by="class" data-evalby="font-size|color"></i>
+          </button>
+        </div>
+        <div class="card-contact">
+          <h4 data-filter-by="text" data-evalby="font-size|font-weight|color">Contact Me</h4>
+        </div>
+        <div class="card-social email">
+          <div class="icon-wrapper">
+            <i class="fas fa-envelope" data-filter-by="class" data-evalby="font-size|color"></i>
+          </div>
+          <div class="contact-details">
+            <h4 data-filter-by="text" data-evalby="font-size|font-weight|color">Email</h4>
+            <p data-filter-by="text" data-evalby="font-size|color">janebrown@gmail.com</p>
+          </div>
+          <span data-filter-by="text" data-evalby="font-size|color">></span>
+        </div>
+        <div class="card-social fb">
+          <div class="icon-wrapper">
+            <i class="fab fa-facebook-square" data-filter-by="class" data-evalby="font-size|color"></i>
+          </div>
+          <div class="contact-details">
+            <h4 data-filter-by="text" data-evalby="font-size|font-weight|color">Facebook</h4>
+            <p data-filter-by="text" data-evalby="font-size|color">Jane Brown</p>
+          </div>
+          <span data-filter-by="text" data-evalby="font-size|color">></span>
+        </div>
+        <div class="card-social linkedin">
+          <div class="icon-wrapper">
+            <i class="fab fa-linkedin" data-filter-by="class" data-evalby="font-size|color"></i>
+          </div>
+          <div class="contact-details">
+            <h4 data-filter-by="text" data-evalby="font-size|font-weight|color">LinkedIn</h4>
+            <p data-filter-by="text" data-evalby="font-size|color">@janebrown</p>
+          </div>
+          <span data-filter-by="text" data-evalby="font-size|color">></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

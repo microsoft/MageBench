@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Random User</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper">
+<div class="img-area">
+<div class="inner-area">
+<img id="photo" src="resource1.png" data-filter-by="src" data-evalby="height|width|border-radius|object-fit"/>
+</div>
+</div>
+<div id="name" data-filter-by="text" data-evalby="font-size|font-weight|color|margin">John Doe</div>
+<hr class="horizon" data-filter-by="background" data-evalby="width|height|background|margin"/>
+<div class="info">
+<p>First Name : <span id="first" data-filter-by="text" data-evalby="font-size|font-weight|color">John</span></p>
+<p>Last Name : <span id="last" data-filter-by="text" data-evalby="font-size|font-weight|color">Doe</span></p>
+<p>Location : <span id="street" data-filter-by="text" data-evalby="font-size|font-weight|color">Earth</span></p>
+<p>Phone : <span id="phone" data-filter-by="text" data-evalby="font-size|font-weight|color">333-333-2222</span></p>
+<p>Email : <span id="email" data-filter-by="text" data-evalby="font-size|font-weight|color">test@gmail.com</span></p>
+</div>
+<button id="btn" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|box-shadow|border-radius|padding|margin">Random Person</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Movie Seat Booking</title>
+</head>
+<body>
+<div class="movie-container">
+<label for="movie" data-filter-by="text" data-evalby="font-size|font-weight|color">Pick a movie:</label>
+<select id="movie" name="movie">
+<option value="10" data-filter-by="text" data-evalby="font-size|font-weight|color">The Big Lebowski ($10)</option>
+<option value="12" data-filter-by="text" data-evalby="font-size|font-weight|color">Fargo ($12)</option>
+<option value="8" data-filter-by="text" data-evalby="font-size|font-weight|color">O Brother ($8)</option>
+<option value="9" data-filter-by="text" data-evalby="font-size|font-weight|color">No Country for Old Men ($9)</option>
+</select>
+</div>
+<ul class="showcase">
+<li>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">N/A</small>
+</li>
+<li>
+<div class="seat selected" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">Selected</small>
+</li>
+<li>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">Occupied</small>
+</li>
+</ul>
+<div class="container">
+<div class="screen" data-filter-by="background-color" data-evalby="background-color|height|width|margin|transform|box-shadow"></div>
+<div class="row">
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+</div>
+<div class="row">
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+</div>
+<div class="row">
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+</div>
+<div class="row">
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+</div>
+<div class="row">
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+</div>
+<div class="row">
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat occupied" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+<div class="seat" data-filter-by="background-color" data-evalby="background-color|height|width|margin|border-top-left-radius|border-top-right-radius"></div>
+</div>
+</div>
+<p class="text" data-filter-by="text" data-evalby="font-size|font-weight|color">
+      You have selected <span id="count" data-filter-by="text" data-evalby="font-size|font-weight|color">0</span> seats for a price of $<span id="total" data-filter-by="text" data-evalby="font-size|font-weight|color">0</span>
+</p>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation in JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="signup-header">
+          <h1 data-filter-by="text" data-evalby="font-size|font-weight|color">Signup</h1>
+        </header>
+        <main class="signup-body">
+          <form action="#">
+            <p>
+              <label for="name" data-filter-by="text" data-evalby="font-size|font-weight|color">Full Name</label>
+              <input type="text" placeholder="Type Name Here" id="name" data-filter-by="placeholder" data-evalby="font-size|color|border-radius|padding|background-color"/>
+              <i class="fa-solid" data-filter-by="font-size" data-evalby="font-size|color"></i>
+              <span id="nameError" data-filter-by="text" data-evalby="font-size|font-weight|color"></span>
+            </p>
+            <p>
+              <label for="email" data-filter-by="text" data-evalby="font-size|font-weight|color">Email</label>
+              <input type="email" placeholder="xyz@gmail.com" id="email" data-filter-by="placeholder" data-evalby="font-size|color|border-radius|padding|background-color"/>
+              <i class="fa-solid" data-filter-by="font-size" data-evalby="font-size|color"></i>
+              <span id="emailError" data-filter-by="text" data-evalby="font-size|font-weight|color"></span>
+            </p>
+            <p>
+              <label for="password" data-filter-by="text" data-evalby="font-size|font-weight|color">Password</label>
+              <input type="password" placeholder="at least 8 characters" id="password" data-filter-by="placeholder" data-evalby="font-size|color|border-radius|padding|background-color"/>
+              <i class="fa-solid" data-filter-by="font-size" data-evalby="font-size|color"></i>
+              <span id="passError" data-filter-by="text" data-evalby="font-size|font-weight|color"></span>
+            </p>
+            <p>
+              <input type="submit" value="Create Account" id="submitBtn" data-filter-by="value" data-evalby="font-size|color|border-radius|padding|background-color"/>
+            </p>
+          </form>
+        </main>
+        <footer class="signup-footer">
+          <p data-filter-by="text" data-evalby="font-size|font-weight|color">Already have an account? <a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Login</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+  <!-- Add Script file of font awsome to access the icons -->
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Form Validator</title>
+</head>
+<body>
+<div class="container">
+<form class="form" id="form">
+<h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Register With Us</h2>
+<div class="form-control">
+<label for="username" data-filter-by="text" data-evalby="font-size|font-weight|color">Username</label>
+<input id="username" placeholder="Enter username" type="text" data-filter-by="id" data-evalby="border|border-radius|padding|font-size|color"/>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">Error message</small>
+</div>
+<div class="form-control">
+<label for="email" data-filter-by="text" data-evalby="font-size|font-weight|color">Email</label>
+<input id="email" placeholder="Enter email" type="text" data-filter-by="id" data-evalby="border|border-radius|padding|font-size|color"/>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">Error message</small>
+</div>
+<div class="form-control">
+<label for="password" data-filter-by="text" data-evalby="font-size|font-weight|color">Password</label>
+<input id="password" placeholder="Enter password" type="password" data-filter-by="id" data-evalby="border|border-radius|padding|font-size|color"/>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">Error message</small>
+</div>
+<div class="form-control">
+<label for="password2" data-filter-by="text" data-evalby="font-size|font-weight|color">Confirm Password</label>
+<input id="password2" placeholder="Enter password again" type="password" data-filter-by="id" data-evalby="border|border-radius|padding|font-size|color"/>
+<small data-filter-by="text" data-evalby="font-size|font-weight|color">Error message</small>
+</div>
+<button data-filter-by="text" data-evalby="background-color|border|border-radius|color|font-size|padding">Submit</button>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

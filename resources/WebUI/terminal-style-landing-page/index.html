@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/css/winbox.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Terminal</title>
+</head>
+<body>
+<div class="container">
+<nav>
+<ul>
+<li id="about" data-filter-by="text" data-evalby="color|cursor">/about</li>
+<li id="contact" data-filter-by="text" data-evalby="color|cursor">/contact</li>
+</ul>
+</nav>
+<main>
+<h1 data-filter-by="text" data-evalby="color|font-size|letter-spacing|margin-bottom">dtaggart:$<span class="cursor" data-filter-by="animation" data-evalby="font-weight|animation">|</span></h1>
+<h3 data-filter-by="text" data-evalby="margin-bottom">Find me online:</h3>
+<ul>
+<li data-filter-by="text" data-evalby="color"><a href="#" data-filter-by="text" data-evalby="color|text-decoration">YouTube</a></li>
+<li data-filter-by="text" data-evalby="color"><a href="#" data-filter-by="text" data-evalby="color|text-decoration">Twitter</a></li>
+<li data-filter-by="text" data-evalby="color"><a href="#" data-filter-by="text" data-evalby="color|text-decoration">GitHub</a></li>
+<li data-filter-by="text" data-evalby="color"><a href="#" data-filter-by="text" data-evalby="color|text-decoration">CodePen</a></li>
+</ul>
+</main>
+</div>
+<div class="hidden">
+<div id="about-content">
+<h2 data-filter-by="text" data-evalby="color">about-me:$<span class="cursor">|</span></h2>
+<p data-filter-by="text" data-evalby="margin">
+          My name is Dagny Taggart and I have been programming for 14 years.
+        </p>
+<p data-filter-by="text" data-evalby="margin">
+          Some of the languages that I am fluent in include JavaScript, Python
+          and PHP.
+        </p>
+</div>
+<div id="contact-content">
+<h2 data-filter-by="text" data-evalby="color">contact-me:$<span class="cursor">|</span></h2>
+<p data-filter-by="text" data-evalby="margin">You can contact me at the email and phone number below</p>
+<ul>
+<li data-filter-by="text" data-evalby="color">Phone: 555-555-5555</li>
+<li data-filter-by="text" data-evalby="color">Email: dagny@taggart.com</li>
+</ul>
+</div>
+</div>
+<script src="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/js/winbox.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

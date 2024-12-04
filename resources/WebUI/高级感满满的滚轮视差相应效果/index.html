@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <title>高级感满满的滚轮视差相应效果</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h2 data-filter-by="text" data-evalby="position|top|width|text-align|letter-spacing|color">↓滚轮滚一下呗↓</h2>
+  <div class="bg" data-filter-by="background-image" data-evalby="background-image|background-size|background-position|height|font-size|font-weight|text-align|position|overflow|padding-top">
+    <span data-filter-by="text" data-evalby="font-size|font-weight|color">Hello</span>
+  </div>
+  <h1 data-filter-by="text" data-evalby="position|top|left|transform|width|color|letter-spacing|padding|text-align|background-color">hello world</h1>
+  <script type="text/javascript">
+    // 获取背景对象
+    const bg = document.querySelector(".bg")
+    // 监听滚轮事件
+    document.addEventListener("scroll", function () {
+      // 获取当前滚轮的位置
+      const scrollY = window.scrollY
+      if (scrollY != 0) {
+        // 滚轮位置不等于0时,修改背景的定位加上滚轮的值
+        bg.style.backgroundPosition = "calc(50% + " + scrollY + "px) calc(50% + " + scrollY + "px)"
+      } else {
+        // 否则清空背景的定位
+        bg.style.backgroundPosition = ""
+      }
+    })
+  </script>
+</body>
+
+</html>

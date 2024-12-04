@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="images/admin.png" width="50" class="admin-image" data-filter-by="src" data-evalby="width|border-radius"/>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title" data-filter-by="text" data-evalby="font-size|color|letter-spacing">John Smith</h2>
+            <p class="card-subtitle" data-filter-by="text" data-evalby="font-size|color">Administrator</p>
+          </div>
+        </div>
+        <form class="search-form">
+          <input class="search-input" type="text" placeholder="Search" data-filter-by="placeholder" data-evalby="width|height|background-color|border|border-radius|padding|color|font-size|letter-spacing"/>
+          <button type="button" class="search-button" data-filter-by="background-color" data-evalby="background-color|border|transform">
+            <i class="fas fa-search" data-filter-by="class" data-evalby="color|font-size"></i>
+          </button>
+        </form>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-filter-by="text" data-evalby="color|display|font-size|padding-left"
+              ><i class="fas fa-tachometer-alt"></i
+              ><span class="nav-link-text" data-filter-by="text" data-evalby="font-size|padding-left|flex-grow">Dashboard</span>
+              <i class="fas fa-angle-right" data-filter-by="class" data-evalby="font-size"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Dashboard 1</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Dashboard 2</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Dashboard 3</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-filter-by="text" data-evalby="color|display|font-size|padding-left"
+              ><i class="fas fa-shopping-cart"></i>
+              <span class="nav-link-text" data-filter-by="text" data-evalby="font-size|padding-left|flex-grow">E-commerce</span>
+              <i class="fas fa-angle-right" data-filter-by="class" data-evalby="font-size"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Products</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Orders</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Credit Card</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-filter-by="text" data-evalby="color|display|font-size|padding-left"
+              ><i class="far fa-gem"></i>
+              <span class="nav-link-text" data-filter-by="text" data-evalby="font-size|padding-left|flex-grow">Components</span>
+              <i class="fas fa-angle-right" data-filter-by="class" data-evalby="font-size"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">General</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Icons</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Tables</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"  data-filter-by="text" data-evalby="color|display|font-size|padding-left"
+              ><i class="fas fa-chart-line"></i>
+              <span class="nav-link-text" data-filter-by="text" data-evalby="font-size|padding-left|flex-grow">Charts</span>
+              <i class="fas fa-angle-right" data-filter-by="class" data-evalby="font-size"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Pie Chart</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Line Cart</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Bar Chart</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-filter-by="text" data-evalby="color|display|font-size|padding-left">
+              <i class="fas fa-map-marker-alt"></i
+              ><span class="nav-link-text" data-filter-by="text" data-evalby="font-size|padding-left|flex-grow">Maps</span>
+              <i class="fas fa-angle-right" data-filter-by="class" data-evalby="font-size"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Google Maps</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span data-filter-by="text" data-evalby="font-size">Open street map</span></a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bottom-list">
+          <li class="bottom-item">
+            <a href="#" class="bottom-link">
+              <span data-filter-by="text" data-evalby="font-size">5</span> <i class="fas fa-bell"></i
+            ></a>
+          </li>
+          <li class="bottom-item">
+            <a href="#" class="bottom-link"
+              ><span data-filter-by="text" data-evalby="font-size">7</span><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li class="bottom-item">
+            <a href="#" class="bottom-link">
+              <span data-filter-by="text" data-evalby="font-size">1</span> <i class="fas fa-cog"></i
+            ></a>
+          </li>
+          <li class="bottom-item">
+            <a href="#" class="bottom-link"
+              ><i class="fas fa-power-off"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="main-section">
+        <header class="header">
+          <h1 class="heading">Dashboard</h1>
+        </header>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

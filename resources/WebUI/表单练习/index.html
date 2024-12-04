@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>表单</title>
+	<style>
+		table {
+			margin: 100px auto;
+			border-spacing: 0px 15px;
+		}
+		.main .title {
+			text-align: end;
+			vertical-align: text-top;
+		}
+	</style>
+</head>
+
+<body>
+	<table class="main">
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">昵称：</td>
+			<td>
+				<input type="text" data-filter-by="type" data-evalby="width|height|border|padding">您的昵称最多10个字符
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">居住地：</td>
+			<td>
+				<select data-filter-by="tag" data-evalby="width|height|border|padding">
+					<option value="中国" data-filter-by="text" data-evalby="font-size|font-weight|color">中国</option>
+					<option value="美国" data-filter-by="text" data-evalby="font-size|font-weight|color">美国</option>
+					<option value="日本" data-filter-by="text" data-evalby="font-size|font-weight|color">日本</option>
+				</select>
+				<select data-filter-by="tag" data-evalby="width|height|border|padding">
+					<option value="黑龙江" data-filter-by="text" data-evalby="font-size|font-weight|color">黑龙江</option>
+					<option value="江苏" data-filter-by="text" data-evalby="font-size|font-weight|color">江苏</option>
+					<option value="内蒙古" data-filter-by="text" data-evalby="font-size|font-weight|color">内蒙古</option>
+				</select>
+				<select data-filter-by="tag" data-evalby="width|height|border|padding">
+					<option value="哈尔滨" data-filter-by="text" data-evalby="font-size|font-weight|color">哈尔滨</option>
+					<option value="绥化" data-filter-by="text" data-evalby="font-size|font-weight|color">绥化</option>
+					<option value="日本" data-filter-by="text" data-evalby="font-size|font-weight|color">日本</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">性别：</td>
+			<td>
+				<input type="radio" name="sex" id="" value="male" checked data-filter-by="type" data-evalby="width|height|border|padding">男
+				<input type="radio" name="sex" id="" value="female" data-filter-by="type" data-evalby="width|height|border|padding">女
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">身份：</td>
+			<td>
+				<input type="radio" name="identity" id="" value="在校学生" checked data-filter-by="type" data-evalby="width|height|border|padding">在校学生
+				<input type="radio" name="identity" id="" value="教师" data-filter-by="type" data-evalby="width|height|border|padding">教师
+				<input type="radio" name="identity" id="" value="上班族" data-filter-by="type" data-evalby="width|height|border|padding">上班族
+				<input type="radio" name="identity" id="" value="自由职业" data-filter-by="type" data-evalby="width|height|border|padding">自由职业
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="text" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">生日：</td>
+			<td class="contain">
+				<select data-filter-by="tag" data-evalby="width|height|border|padding">
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">----</option>
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">2024</option>
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">2023</option>
+				</select>年
+				<select data-filter-by="tag" data-evalby="width|height|border|padding">
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">----</option>
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">1</option>
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">2</option>
+				</select>月
+				<select data-filter-by="tag" data-evalby="width|height|border|padding">
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">----</option>
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">3</option>
+					<option value="" data-filter-by="text" data-evalby="font-size|font-weight|color">4</option>
+				</select>日
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">博客地址：</td>
+			<td class="contain">
+				<input type="text" value="http://" data-filter-by="type" data-evalby="width|height|border|padding">
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">居住状态：</td>
+			<td class="contain">
+				<input type="checkbox" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">独居
+				<input type="checkbox" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">和伴侣
+				<input type="checkbox" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">和室友
+				<input type="checkbox" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">和父母
+				<input type="checkbox" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">和孩子
+				<input type="checkbox" name="" id="" data-filter-by="type" data-evalby="width|height|border|padding">和宠物
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">兴趣爱好：</td>
+			<td class="contain">
+				<textarea name="" id="" cols="70" rows="3" placeholder="不同项目之间请用空格隔开" data-filter-by="placeholder" data-evalby="width|height|border|padding"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">喜欢或欣赏的人：</td>
+			<td class="contain">
+				<textarea name="" id="" cols="70" rows="4" placeholder="不同人名之间请用空格隔开，例如“金庸 周杰伦 姚明”" data-filter-by="placeholder" data-evalby="width|height|border|padding"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color">自我介绍：</td>
+			<td class="contain">
+				<textarea name="" id="" cols="70" rows="10" data-filter-by="has_text" data-evalby="width|height|border|padding"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td class="title" data-filter-by="text" data-evalby="font-size|font-weight|color"></td>
+			<td class="contain">
+				<button type="submit" data-filter-by="text" data-evalby="font-size|font-weight|color|background-color|border-radius">保存基本信息</button>
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Screen Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Home</a></li>
+      <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Products</a></li>
+      <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">News</a></li>
+      <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">About</a></li>
+      <li><a href="" data-filter-by="text" data-evalby="font-size|font-weight|color">Contact</a></li>
+
+      <div class="btn" data-open="close">
+        <span data-filter-by="border-radius" data-evalby="width|height|border|border-radius|margin-bottom"></span>
+        <span data-filter-by="border-radius" data-evalby="width|height|border|border-radius|margin-bottom"></span>
+        <span data-filter-by="border-radius" data-evalby="width|height|border|border-radius|margin-bottom"></span>
+      </div>
+
+      <div class="highlight"></div>
+    </ul>
+
+    <div class="image-container">
+      <div class="img-one img" data-filter-by="background-image" data-evalby="width|height|background-image|background-size|background-position"></div>
+      <div class="img-two img" data-filter-by="background-image" data-evalby="width|height|background-image|background-size|background-position"></div>
+    </div>
+
+    <div class="container">
+      <article>
+        <h2 data-filter-by="text" data-evalby="font-size|font-weight|color">Welcome To The Real World</h2>
+        <p class="para" data-filter-by="text" data-evalby="font-size|font-weight|color|line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates fugiat blanditiis enim numquam nulla, sed sint ipsa modi voluptatum quibusdam corrupti reprehenderit. Voluptatem ratione ipsa qui pariatur minima dignissimos.</p>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

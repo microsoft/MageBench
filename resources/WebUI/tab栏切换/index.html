@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基于事件委托的tab栏切换</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tab {
+      width: 590px;
+      height: 340px;
+      margin: 20px;
+      border: 1px solid #e4e4e4;
+    }
+
+    .tab-nav {
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .tab-nav h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-left: 20px;
+    }
+
+    .tab-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .tab-nav ul li {
+      margin: 0 20px;
+      font-size: 14px;
+    }
+
+    .tab-nav ul li a {
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      color: #333;
+    }
+
+    .tab-nav ul li a.active {
+      border-color: #e1251b;
+      color: #e1251b;
+    }
+
+    .tab-content {
+      padding: 0 16px;
+    }
+
+    .tab-content .item {
+      display: none;
+    }
+
+    .tab-content .item.active {
+      display: block;
+    }
+  </style>
+</head>
+<!-- 
+  data: 2024-3-25
+  achieve: 事件委托 自定义属性
+ -->
+<body>
+  <div class="tab">
+    <div class="tab-nav">
+      <h3 data-filter-by="text" data-evalby="font-size|font-weight|color">每日特价</h3>
+      <ul>
+        <li><a class="active" href="javascript:;" data-id="0" data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|color">精选</a></li>
+        <li><a href="javascript:;" data-id="1" data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|color">美食</a></li>
+        <li><a href="javascript:;" data-id="2" data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|color">百货</a></li>
+        <li><a href="javascript:;" data-id="3" data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|color">个护</a></li>
+        <li><a href="javascript:;" data-id="4" data-filter-by="text" data-evalby="font-size|font-weight|color|border-bottom|color">预告</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="item active" data-filter-by="src" data-evalby="width|height"><img src="./images/tab00.png" alt="" /></div>
+      <div class="item" data-filter-by="src" data-evalby="width|height"><img src="./images/tab01.png" alt="" /></div>
+      <div class="item" data-filter-by="src" data-evalby="width|height"><img src="./images/tab02.png" alt="" /></div>
+      <div class="item" data-filter-by="src" data-evalby="width|height"><img src="./images/tab03.png" alt="" /></div>
+      <div class="item" data-filter-by="src" data-evalby="width|height"><img src="./images/tab04.png" alt="" /></div>
+    </div>
+  </div>
+  <script>
+    const ul = document.querySelector('.tab-nav ul')
+    ul.addEventListener('click',function(e){
+      if(e.target.tagName ==='A'){
+        //排他，移除原来的active
+        document.querySelector('.tab-nav .active').classList.remove('active')
+        // 给当前元素（e.target）加active
+        e.target.classList.add('active')
+        document.querySelector('.tab-content .active').classList.remove('active')
+        // document.querySelector(`.tab-content .item:nth-child(${+e.target.dataset.id+1})`).classList.add('active')
+        document.querySelectorAll('.tab-content .item')[+e.target.dataset.id].classList.add('active')
+      }
+    })
+  </script>
+</body>
+</html>

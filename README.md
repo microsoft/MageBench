@@ -154,13 +154,10 @@ Please check out code in `Flow/Online_HL_FBandSB.py` and `Flow/GlobalPlanning.py
 ## Citation
 ```
 @article{zhang2024magebench,
-      title={MageBench: Bridging Large Multimodal Models to Agents}, 
-      author={Miaosen Zhang and Qi Dai and Yifan Yang and Jianmin Bao and Dongdong Chen and Kai Qiu and Chong Luo and Xin Geng and Baining Guo},
-      year={2024},
-      eprint={2412.04531},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.04531}, 
+  title={MageBench: Bridging Large Multimodal Models to Agents},
+  author={Miaosen Zhang and Qi Dai and Yifan Yang and Jianmin Bao and Dongdong Chen and Kai Qiu and Chong Luo and Xin Geng and Baining Guo},
+  journal={arXiv preprint arXiv:2311.07594},
+  year={2024}
 }
 ```
 

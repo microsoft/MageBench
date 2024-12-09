@@ -153,12 +153,20 @@ Please check out code in `Flow/Online_HL_FBandSB.py` and `Flow/GlobalPlanning.py
 
 ## Citation
 ```
-
+@misc{zhang2024magebench,
+      title={MageBench: Bridging Large Multimodal Models to Agents}, 
+      author={Miaosen Zhang and Qi Dai and Yifan Yang and Jianmin Bao and Dongdong Chen and Kai Qiu and Chong Luo and Xin Geng and Baining Guo},
+      year={2024},
+      eprint={2412.04531},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.04531}, 
+}
 ```
 
 ## Contributing
 
-This project welcomes contributions and suggestions. We are very much looking forward to you integrating more environments that meet our requirements into our repository. The requirements for the environments can be found in our paper, mainly they should be representative at the reasoning, and the environments should be simple and easy to install. Some possible options include: endgames of board games (different endgame states as different scenarios), Sudoku, King of Fighters, etc. If you are willing to contribute to our repository, we strongly encourage you to get in touch with us. We can exchange information and avoid concurrent duplicate work by multiple contributors.
+This project welcomes contributions and suggestions. We are very much looking forward to you integrating more environments that meet our requirements into our repository. The requirements for the environments can be found in our paper, mainly they should be representative at the reasoning, and the environments should be simple and easy to install. Some possible options include: endgames of board games (different endgame states as different scenarios), Sudoku, King of Fighters, etc. If you are willing to contribute to our repository, we strongly encourage you to get in touch with us. We can exchange information and avoid concurrent duplicate work by multiple contributors. We will add your work in the citation too.
 
 ## Acknowledgments
 

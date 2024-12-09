@@ -11,7 +11,7 @@
 
 
 <p align="center">
-   <a href="" target="_blank">🤖 GitHub</a> | <a href="" target="_blank">📄 Paper </a> | <a href="https://huggingface.co/spaces/microsoft/MageBench-Leaderboard" target="_blank"> 🥇 Leader Board </a> 
+   <a href="" target="_blank">🤖 GitHub</a> | <a href="https://arxiv.org/abs/2412.04531" target="_blank">📄 Paper </a> | <a href="https://huggingface.co/spaces/microsoft/MageBench-Leaderboard" target="_blank"> 🥇 Leader Board </a> 
 </p>
 
 ## Table of Contents

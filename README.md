@@ -11,7 +11,7 @@
 
 
 <p align="center">
-   <a href="" target="_blank">🤖 GitHub</a> | <a href="" target="_blank">📄 Paper </a> | <a href="" target="_blank"> 🥇 Leader Board </a> | <a href="" target="_blank"> 📽︎ Demo on YouTube </a>
+   <a href="" target="_blank">🤖 GitHub</a> | <a href="" target="_blank">📄 Paper </a> | <a href="https://huggingface.co/spaces/microsoft/MageBench-Leaderboard" target="_blank"> 🥇 Leader Board </a> 
 </p>
 
 ## Table of Contents
@@ -53,10 +53,10 @@ We will update known installing issues in [here](docs/installation/known_issues.
 The implementation logic of our code repository is that we standardize the input format of all models (including models supported by vllm, models supported by lmdeploy, models deployed by OpenAI, models on the AzureOpenAI platform, Gemini, Claude, and others) into OpenAI's input format. If using local models, we first deploy the local models as a local service. This way, we can call the models using a unified interface across different simulation environments and agent settings.
 
 Follow **[this instruction](docs/installation/Setup_service.md)** to setup the model you want, and (optional) run:
-```python
-python ./tools&tests/test_api.py --port <port>
+```bash
+python ./test_api.py --API-type <type> --port <port> --model <model>
 ```
-to check if it works.
+to check if it works (please check the comments in the python file). 
 
 
 ### Step 3. Try an environment
@@ -166,26 +166,3 @@ This project welcomes contributions and suggestions. We are very much looking fo
 - The rendering enviroment of Football is provided by [Google Research Football](https://github.com/google-research/football). The evaluation metric is implemented upon the state by ourselves.
 - The enviroment and evaluation are built by ourselves using [Selenium](https://github.com/SeleniumHQ/Selenium). The webpage resources are adapted from several open-source repositories, mostly from [html-css-javascript-projects](https://github.com/solygambas/html-css-javascript-projects), [HTML-CSS-JavaScript-100-Projects
 ](https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects), [HTML-CSS-JavaScript-projects-for-beginners](https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners/tree/main) and [50-Projects-In-50-Days-](https://github.com/JuliaMendes/50-Projects-In-50-Days-). We express our gratitude for their work. Additionally, if you wish to train LMM to achieve better results, please do not include the aforementioned repositories in the training set.
-
-<!-- 
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This  adopted thproject hase [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies. -->

@@ -15,7 +15,7 @@ app = FastAPI()
 tasks: Dict[str, str] = {}  
 task_queue: List[Dict] = []  
   
-# 加载GPT模型  
+# ----------------------------------------------------------------------------------
 model_id = "meta-llama/Llama-3.2-90B-Vision-Instruct"  
 model = MllamaForConditionalGeneration.from_pretrained(  
     model_id,  

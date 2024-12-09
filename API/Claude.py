@@ -3,33 +3,6 @@ from copy import deepcopy
 import time
 # Create an instance of the Anthropics API client
 
-# example
-# response = client.messages.create(
-#     model="claude-3-5-sonnet-20240620",
-#     max_tokens=512,
-#     temperature=0.9,
-#     top_p=0.95,
-#     messages=[
-#         {
-#             "role": "user",
-#             "content": [
-#                 {
-#                     "type": "image",
-#                     "source": {
-#                         "type": "base64",
-#                         "media_type": "image/jpeg",
-#                         "data": "media_file"
-#                     }
-#                 },
-#                 {
-#                     "type": "text",
-#                     "text": "What is in this image?"
-#                 }
-#             ]
-#         }
-#     ],
-#     system="You are a creative writing assistant.",
-# )
 
 def process(msg):
     new_msg = []

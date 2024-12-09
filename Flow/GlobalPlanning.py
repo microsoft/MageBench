@@ -69,38 +69,6 @@ class GlobalPlan(Plan):
                         "action": f"write_{tp}", 
                         "data": code
                     })
-
-
-            # while ptr < ed:
-            #     if "```" not in ostring[ptr:]: 
-            #         break
-            #     ostr = ostring[ptr:]
-            #     st = ostr.find("```")
-            #     oidx = None
-            #     TP = None
-            #     for tp in ["html", "javascript", "css"]:
-            #         oidx = get_range(ostr[st:], tp)
-            #         if oidx is not None:
-            #             TP = tp
-            #             break
-
-            #     if oidx is None:
-            #         tp, oidx = get_range_auto(ostr[st:])
-            #         if oidx is not None:
-            #             TP = tp
-
-            #     if oidx is not None:
-            #         code = ostr[st+len(f"```{TP}"): st+oidx]
-            #         ptr += st + oidx + len("```")
-            #         args.append({
-            #             "task_dir": self.env.sub_task_dir, 
-            #             "action": f"write_{TP}", 
-            #             "data": code
-            #         })
-            #     else:
-            #         ptr += st + len("```")
-
-
         elif self.task == "Sokoban":
             if "### Actions" in ostring:
                 ostring = ostring.split("### Actions")[1].strip()
